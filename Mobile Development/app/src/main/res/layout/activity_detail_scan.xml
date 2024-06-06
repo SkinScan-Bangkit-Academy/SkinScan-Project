@@ -18,55 +18,103 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/diagnosed"
-        android:background="@drawable/edittext_shape"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginBottom="16dp"
         android:padding="12dp"
-        app:cardCornerRadius="20dp">
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="12dp">
 
         <TextView
-            android:background="@drawable/shape_menu"
             android:id="@+id/titlediagnosingData"
+            android:background="@drawable/button_shape"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
             android:layout_margin="10dp"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:text="@string/diagnosed"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textColor="@color/thirdColor"
             android:fontFamily="@font/roboto_medium"/>
 
-        <ImageView
+        <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            />
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="80dp"
+            android:paddingEnd="13dp"
+            android:paddingStart="13dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/backgrounds/scenic"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="53dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/skin_desease"
+            android:textColor="@color/primaryColor" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/desc_diagnosed"
+            android:textColor="@color/primaryColor"
+            android:textSize="11sp"
+            android:gravity="center" />
 
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/drug_Recoomend"
-        android:background="@drawable/edittext_shape"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_shape"
         android:padding="12dp"
-        app:cardCornerRadius="20dp">
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="12dp">
 
         <TextView
-            android:background="@drawable/shape_menu"
             android:id="@+id/titleDrugRecommendationData"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
             android:layout_margin="10dp"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/roboto_medium"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:text="@string/drug_recommendation"
-            android:textSize="18sp"
             android:textColor="@color/thirdColor"
-            android:fontFamily="@font/roboto_medium"/>
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/desc_drugRecommend"
+            android:textColor="@color/primaryColor"
+            android:textSize="15sp"
+            android:gravity="center" />
 
 
     </androidx.cardview.widget.CardView>
@@ -78,20 +126,33 @@
         android:layout_height="200dp"
         android:layout_marginBottom="16dp"
         android:padding="12dp"
-        app:cardCornerRadius="20dp">
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="12dp">
 
         <TextView
-            android:background="@drawable/shape_menu"
+            android:background="@drawable/button_shape"
             android:id="@+id/titleDeseasePreventionData"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
             android:layout_margin="10dp"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:text="@string/disease_prevention"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textColor="@color/thirdColor"
             android:fontFamily="@font/roboto_medium"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/desc_prevention"
+            android:textColor="@color/primaryColor"
+            android:textSize="15sp"
+            android:gravity="center" />
 
 
     </androidx.cardview.widget.CardView>

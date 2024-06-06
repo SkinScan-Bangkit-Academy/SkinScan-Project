@@ -51,6 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:layout_margin="30dp"
         android:textSize="25sp"
         android:text="@string/hi"
@@ -74,6 +75,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginBottom="0dp"
             android:paddingStart="40dp"
+            android:paddingEnd="40dp"
             android:fontFamily="@font/roboto_medium"
             android:textStyle="bold"
             android:textColor="@color/primaryColor"
@@ -120,7 +122,8 @@
             android:layout_height="215dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/bg_search"/>
+            android:src="@drawable/bg_search"
+            android:contentDescription="@string/bg_rv" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_below="@id/title"
@@ -139,7 +142,7 @@
             android:layout_marginTop="160dp"
             android:layout_marginRight="15dp"
             android:layout_marginLeft="15dp"
-            android:src="@drawable/shape_menu"/>
+            android:src="@drawable/button_shape"/>
 
         <LinearLayout
             android:id="@+id/tab_text"
