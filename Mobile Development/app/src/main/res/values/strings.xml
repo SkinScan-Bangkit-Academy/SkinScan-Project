@@ -41,4 +41,9 @@
     <string name="desc_diagnosed">Your skin disease is Melanocytic nevus (mole). These are benign and usually don\'t need treatment. Rarely, they may develop into melanoma. Most melanomas start on normal skin.</string>
     <string name="desc_prevention">The majority of melanocytic nevi do not require treatment. Nevi that are benign but bother the patient due to appearance or irritation can be removed. Moles are removed using shaving techniques or suture surgery.</string>
     <string name="desc_drugRecommend">all moles have a very small risk of developing melanoma, a type of skin cancer. The development of melanoma in a congenital melanocytic nevus is very rare.</string>
+    <string name="word1">Did u have problem with your skin ?</string>
+    <string name="word2">Didn\'t know how to find your skin</string>
+    <string name="word3">Any Solution</string>
+    <string name="word4">Problem ?</string>
+    <string name="word5">To solve this problem ?</string>
 </resources>

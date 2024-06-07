@@ -8,6 +8,8 @@
     android:background="#101A36">
 
     <ImageView
+
+        android:backgroundTint="@color/thirdColor"
         android:id="@+id/imageView"
         android:layout_width="140dp"
         android:layout_height="160dp"

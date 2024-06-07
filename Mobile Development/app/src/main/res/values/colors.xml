@@ -5,5 +5,6 @@
     <color name="thirdColor">#FFFFFFFF</color>
     <color name="blue_1">#153448</color>
     <color name="blue_2">#0096FF</color>
+    <color name="blue_3">#72FFFF</color>
     <color name="blue_transparan">#80101A36</color>
 </resources>

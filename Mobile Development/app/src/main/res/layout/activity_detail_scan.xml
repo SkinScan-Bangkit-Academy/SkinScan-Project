@@ -113,7 +113,7 @@
             android:fontFamily="@font/roboto_regular"
             android:text="@string/desc_drugRecommend"
             android:textColor="@color/primaryColor"
-            android:textSize="15sp"
+            android:textSize="13sp"
             android:gravity="center" />
 
 
@@ -151,7 +151,7 @@
             android:fontFamily="@font/roboto_regular"
             android:text="@string/desc_prevention"
             android:textColor="@color/primaryColor"
-            android:textSize="15sp"
+            android:textSize="13sp"
             android:gravity="center" />
 
 
