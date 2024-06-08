@@ -1,0 +1,161 @@
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    app:layoutDescription="@xml/activity_on_boarding1_scene">
+
+    <TextView
+        android:id="@+id/onboardingword1"
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="60dp"
+        android:alpha="0"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/word1"
+        android:textColor="@color/blue_2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteX="10dp"
+        tools:alpha="100" />
+
+    <TextView
+        android:id="@+id/onboardingword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/word2"
+        android:textColor="@color/blue_3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/onboardingword1"
+        tools:alpha="100" />
+
+
+    <TextView
+        android:id="@+id/onboardingword3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:alpha="0"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/word3"
+        android:textColor="@color/thirdColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/onboardingword2"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="@id/onboardingword5"
+        app:layout_constraintTop_toBottomOf="@id/onboardingword2"
+        tools:alpha="100" />
+
+    <TextView
+        android:id="@+id/onboardingword4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:alpha="0"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/word4"
+        android:textColor="@color/blue_3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/onboardingword5"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toStartOf="@+id/onboardingword2"
+        app:layout_constraintTop_toBottomOf="@id/onboardingword2"
+        tools:alpha="100" />
+
+    <TextView
+        android:id="@+id/onboardingword5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/word5"
+        android:textColor="@color/thirdColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/onboardingword4"
+        tools:alpha="100" />
+
+    <ImageView
+    android:id="@+id/logoMenu2"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:src="@drawable/contoh_logo"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/descMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="@string/descSlide_2"
+        android:textColor="@color/thirdColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/logoMenu2"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/logoMenu2"
+        app:layout_constraintTop_toBottomOf="@+id/logoMenu2" />
+
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/slideToAct"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="90dp"
+        android:textAlignment="center"
+        app:bounce_on_start="true"
+        app:inner_color="@color/blue_1"
+        app:layout_constraintStart_toStartOf="@id/descMenu2"
+        app:layout_constraintTop_toBottomOf="@id/descMenu2"
+        app:outer_color="@color/blue_2"
+        app:slider_icon_color="@color/thirdColor"
+        app:text="Slide To Act"
+        app:text_color="@color/thirdColor"
+        app:text_style="bold" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu1"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="250dp"
+        app:altSrc="@drawable/ic_circle_full_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/menu2"
+        app:layout_constraintTop_toBottomOf="@id/onboardingword5"
+        app:layout_constraintBottom_toTopOf="@id/menu1"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/thirdColor" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu2"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        app:altSrc="@drawable/ic_circle_full_24"
+        app:layout_constraintStart_toEndOf="@id/menu1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/menu1"
+        app:layout_constraintBottom_toBottomOf="@id/menu1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/thirdColor" />
+
+
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

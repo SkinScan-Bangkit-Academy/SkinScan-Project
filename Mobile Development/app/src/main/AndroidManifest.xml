@@ -25,7 +25,7 @@
             android:name=".view.main.OnBoarding2"
             android:exported="false" />
         <activity
-            android:name=".view.main.OnBoarding1"
+            android:name=".view.main.OnBoarding"
             android:exported="false" />
         <activity
             android:name=".view.main.SplashScreen"

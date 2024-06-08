@@ -3,10 +3,7 @@ package com.bangkit.skinscan.view.main
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.bangkit.skinscan.R
 
 class SplashScreen : AppCompatActivity() {
@@ -17,7 +14,7 @@ class SplashScreen : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
 
         Handler().postDelayed({
-            startActivity(Intent( this, OnBoarding1::class.java))
+            startActivity(Intent( this, OnBoarding::class.java))
             finish()
         }, SPLASH_TIME_OUT)
 
