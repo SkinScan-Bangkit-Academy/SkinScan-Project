@@ -63,7 +63,7 @@
             android:layout_marginStart="53dp"
             android:layout_marginBottom="40dp"
             android:fontFamily="@font/roboto_bold"
-            android:text="@string/skin_desease"
+            tools:text="@tools:sample/full_names"
             android:textColor="@color/primaryColor" />
 
         <TextView
