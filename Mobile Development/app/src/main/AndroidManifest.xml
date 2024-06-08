@@ -19,6 +19,9 @@
         android:theme="@style/Theme.SkinScan"
         tools:targetApi="31" >
         <activity
+            android:name=".view.scan.DetailScanActivity"
+            android:exported="false"/>
+        <activity
             android:name=".view.camera.CameraActivity"
             android:exported="false"
             android:label="@string/title_activity_camera"
