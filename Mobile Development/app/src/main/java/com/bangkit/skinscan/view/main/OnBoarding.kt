@@ -7,16 +7,16 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.bangkit.skinscan.R
-import com.bangkit.skinscan.databinding.ActivityOnBoarding1Binding
+import com.bangkit.skinscan.databinding.ActivityOnBoardingBinding
 import com.ncorti.slidetoact.SlideToActView
 
 class OnBoarding : AppCompatActivity() {
-    private lateinit var binding: ActivityOnBoarding1Binding
+    private lateinit var binding: ActivityOnBoardingBinding
     private lateinit var sequentialAnimator: AnimatorSet
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityOnBoarding1Binding.inflate(layoutInflater)
+        binding = ActivityOnBoardingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         playAnimation()
