@@ -10,10 +10,13 @@ import android.util.Log
 import android.widget.Toast
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.viewModels
 import androidx.core.content.ContextCompat
 import com.bangkit.skinscan.databinding.ActivityHomeBinding
 import com.bangkit.skinscan.utils.getImageUri
+import com.bangkit.skinscan.view.ViewModelFactory
 import com.bangkit.skinscan.view.camera.CameraActivity
+import com.bangkit.skinscan.view.login.LoginActivity
 import com.bangkit.skinscan.view.scan.DetailScanActivity
 
 class HomeActivity : AppCompatActivity() {
@@ -44,7 +47,6 @@ class HomeActivity : AppCompatActivity() {
         if (!allPermissionsGranted()){
             requestPermissionLauncher.launch(REQUIRED_PERMISSION)
         }
-
         binding.square.setOnClickListener { startCameraX() }
     }
 
@@ -56,23 +58,17 @@ class HomeActivity : AppCompatActivity() {
     ){ uri: Uri? ->
         if (uri != null){
             currentImageUri = uri
-            showImage()
+            moveToResult(uri)
         } else {
             Log.d("Photo Picker", "No media selected")
         }
     }
 
-    private fun showImage() {
-        currentImageUri?.let {
-            Log.d("Image URI", "showImage: $it")
-        }
-    }
-
     //camera
-    private fun startCamera(){
-        currentImageUri = getImageUri(this)
-        launcherIntentCamera.launch(currentImageUri)
-    }
+//    private fun startCamera(){
+//        currentImageUri = getImageUri(this)
+//        launcherIntentCamera.launch(currentImageUri)
+//    }
 
     private val launcherIntentCamera = registerForActivityResult(
         ActivityResultContracts.TakePicture()

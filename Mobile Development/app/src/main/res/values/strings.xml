@@ -86,4 +86,5 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="label">%s</string>
+    <string name="data_kosong">data tidak boleh kosong</string>
 </resources>
