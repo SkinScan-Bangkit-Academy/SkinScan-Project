@@ -1,4 +1,4 @@
-package com.bangkit.skinscan.view.main
+package com.bangkit.skinscan.view.onboarding
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
@@ -8,6 +8,9 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.bangkit.skinscan.R
 import com.bangkit.skinscan.databinding.ActivityOnBoardingBinding
+import com.bangkit.skinscan.view.login.LoginActivity
+import com.bangkit.skinscan.view.main.HomeActivity
+import com.bangkit.skinscan.view.register.RegisterActivity
 import com.ncorti.slidetoact.SlideToActView
 
 class OnBoarding : AppCompatActivity() {
@@ -24,7 +27,7 @@ class OnBoarding : AppCompatActivity() {
         val slideToActView = findViewById<SlideToActView>(R.id.slideToAct)
         slideToActView.onSlideCompleteListener = object : SlideToActView.OnSlideCompleteListener {
             override fun onSlideComplete(view: SlideToActView) {
-                val intent = Intent(this@OnBoarding, HomeActivity::class.java)
+                val intent = Intent(this@OnBoarding, LoginActivity::class.java)
                 startActivity(intent)
             }
         }

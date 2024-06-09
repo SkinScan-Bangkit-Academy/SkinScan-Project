@@ -1,10 +1,11 @@
-package com.bangkit.skinscan.view.main
+package com.bangkit.skinscan.view.splash
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.bangkit.skinscan.R
+import com.bangkit.skinscan.view.onboarding.OnBoarding
 
 class SplashScreen : AppCompatActivity() {
     private val SPLASH_TIME_OUT :Long = 3000
