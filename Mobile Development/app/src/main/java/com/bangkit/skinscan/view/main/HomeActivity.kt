@@ -48,6 +48,9 @@ class HomeActivity : AppCompatActivity() {
             requestPermissionLauncher.launch(REQUIRED_PERMISSION)
         }
         binding.square.setOnClickListener { startCameraX() }
+//        binding.profile.setOnClickListener {
+//            val intent = Intent(this@HomeActivity, )
+//        }
     }
 
     private fun startGallery() {

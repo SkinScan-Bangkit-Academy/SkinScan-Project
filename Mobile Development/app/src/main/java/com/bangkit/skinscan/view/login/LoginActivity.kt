@@ -2,6 +2,7 @@ package com.bangkit.skinscan.view.login
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
@@ -31,7 +32,10 @@ class LoginActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        setView()
+    }
 
+    private fun setView(){
         binding.goToSignUp.setOnClickListener {
             val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
             startActivity(intent)
@@ -57,9 +61,9 @@ class LoginActivity : AppCompatActivity() {
             binding.etPw.error = null
 
             loginViewModel.login(email, pass)
-//            loginViewModel.isLoading.observe(this) {
-//                showLoading(it)
-//            }
+            loginViewModel.isLoading.observe(this) {
+                showLoading(it)
+            }
 
             loginViewModel.loginResult.observe(this) { result ->
                     // Login successful, save session
@@ -89,13 +93,13 @@ class LoginActivity : AppCompatActivity() {
         finish()
     }
 
-//    private fun showLoading(isLoading: Boolean) {
-//        if (isLoading) {
-//            binding.progressBar.visibility = View.VISIBLE
-//        } else {
-//            binding.progressBar.visibility = View.GONE
-//        }
-//    }
+    private fun showLoading(isLoading: Boolean) {
+        if (isLoading) {
+            binding.progressBar.visibility = View.VISIBLE
+        } else {
+            binding.progressBar.visibility = View.GONE
+        }
+    }
 
     companion object {
         const val TAG = "LoginActivity"

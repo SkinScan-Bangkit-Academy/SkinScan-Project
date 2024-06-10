@@ -133,6 +133,7 @@
             android:text="@string/desc_regis"
             android:fontFamily="@font/roboto_medium"/>
         <TextView
+            android:id="@+id/goToLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"

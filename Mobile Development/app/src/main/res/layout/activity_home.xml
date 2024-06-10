@@ -240,6 +240,7 @@
             </ImageView>
 
             <ImageView
+                android:id="@+id/profile"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="19dp"

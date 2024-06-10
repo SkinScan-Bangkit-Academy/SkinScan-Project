@@ -3,6 +3,7 @@ package com.bangkit.skinscan.view.register
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
@@ -32,11 +33,21 @@ class RegisterActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        showLoading(false)
+        setView()
+    }
+
+    private fun setView(){
+        binding.goToLogin.setOnClickListener {
+            val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
+            startActivity(intent)
+        }
         btnRegister()
     }
 
     private fun btnRegister() {
         binding.btnLogin.setOnClickListener {
+            showLoading(true)
             val name = binding.etUsername.text.toString().trim()
             val email = binding.etEmail.text.toString().trim()
             val password = binding.etPw.text.toString().trim()
@@ -57,26 +68,33 @@ class RegisterActivity : AppCompatActivity() {
             val request = RegisterRequest(email, password)
             lifecycleScope.launch {
                 try {
+                    showLoading(false)
                     val response = registerViewModel.register(request)
-                    Toast.makeText(this@RegisterActivity, "Akun berhasil dibuat: ${response.message}", Toast.LENGTH_SHORT).show()
+                    showToast("Akun berhasil dibuat")
+                    Log.d(TAG, "btnRegister: ${response.message}")
 
                     val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
                     startActivity(intent)
                     finish()
                 } catch (e: HttpException) {
+                    showLoading(false)
                     Log.d(TAG, "btnRegister: ${e.message}")
-                    Toast.makeText(this@RegisterActivity, "Error: ${e.message}", Toast.LENGTH_SHORT).show()
+                    showToast("Gagal membuat akun. Coba lagi!")
                 } catch (e: Exception) {
+                    showLoading(false)
                     Log.d(TAG, "btnRegister: ${e.message}")
-                    Toast.makeText(this@RegisterActivity, "Error: ${e.message}", Toast.LENGTH_SHORT).show()
+                    showToast("Gagal membuat akun. Coba lagi!")
                 }
             }
         }
     }
 
-//    private fun showLoading(isLoading: Boolean) {
-//    binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
-//}
+    private fun showToast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
+    private fun showLoading(isLoading: Boolean) {
+    binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
+    }
 
     companion object {
         const val TAG = "RegisterActivity"
