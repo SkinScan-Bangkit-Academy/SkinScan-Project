@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".article.ArticleActivity">
+
+    <TextView
+        android:id="@+id/title_article"
+        android:layout_width="250dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/title_article"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/img_read"
+        android:contentDescription="@string/img_article" />
+
+    <SearchView
+        android:id="@+id/find_article"
+        android:background="@drawable/edittext_shape"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_article"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:queryHint="Find your Lovely Article"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_margin="30dp"
+        android:layout_below="@id/find_article">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
