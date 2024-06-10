@@ -86,7 +86,6 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="label">%s</string>
-    <string name="data_kosong">data tidak boleh kosong</string>
-    <string name="invalid_pass">password kurang dari 8 karakter</string>
-    <string name="invalid_email">Email tidak valid</string>
+    <string name="title_article">Le\'ts Read The Article !</string>
+    <string name="img_article">img_article</string>
 </resources>

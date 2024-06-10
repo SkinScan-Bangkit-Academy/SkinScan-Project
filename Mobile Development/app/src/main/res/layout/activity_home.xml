@@ -38,7 +38,7 @@
 
     <SearchView
         android:id="@+id/sv_main"
-        android:background="@drawable/bg_search"
+        android:background="@drawable/edittext_shape"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/nameapp"
