@@ -87,4 +87,6 @@
     </string>
     <string name="label">%s</string>
     <string name="data_kosong">data tidak boleh kosong</string>
+    <string name="invalid_pass">password kurang dari 8 karakter</string>
+    <string name="invalid_email">Email tidak valid</string>
 </resources>

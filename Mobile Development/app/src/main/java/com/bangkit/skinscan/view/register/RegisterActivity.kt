@@ -47,43 +47,50 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun btnRegister() {
         binding.btnLogin.setOnClickListener {
-            showLoading(true)
             val name = binding.etUsername.text.toString().trim()
             val email = binding.etEmail.text.toString().trim()
             val password = binding.etPw.text.toString().trim()
 
             if (name.isEmpty()){
-                binding.etUsername.error = "Data tidak boleh kosong"
+                binding.etUsername.error = getString(R.string.data_kosong)
                 return@setOnClickListener
             }
             if (email.isEmpty()) {
-                binding.etEmail.error = "Data tidak boleh kosong"
+                binding.etEmail.error = getString(R.string.data_kosong)
                 return@setOnClickListener
             }
             if (password.isEmpty()) {
-                binding.etPw.error = "Data tidak boleh kosong"
+                binding.etPw.error = getString(R.string.data_kosong)
                 return@setOnClickListener
             }
 
-            val request = RegisterRequest(email, password)
-            lifecycleScope.launch {
-                try {
-                    showLoading(false)
-                    val response = registerViewModel.register(request)
-                    showToast("Akun berhasil dibuat")
-                    Log.d(TAG, "btnRegister: ${response.message}")
+            binding.etUsername.error = null
+            binding.etEmail.error = null
+            binding.etPw.error = null
 
-                    val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
-                    startActivity(intent)
-                    finish()
-                } catch (e: HttpException) {
-                    showLoading(false)
-                    Log.d(TAG, "btnRegister: ${e.message}")
-                    showToast("Gagal membuat akun. Coba lagi!")
-                } catch (e: Exception) {
-                    showLoading(false)
-                    Log.d(TAG, "btnRegister: ${e.message}")
-                    showToast("Gagal membuat akun. Coba lagi!")
+            registerViewModel.register(email, password)
+            registerViewModel.isLoading.observe(this){
+                showLoading(it)
+            }
+            registerViewModel.registerResult.observe(this){
+                lifecycleScope.launch {
+                    try {
+                        showLoading(false)
+                        showToast("Akun berhasil dibuat")
+                        Log.d(TAG, "btnRegister: ${it.message}")
+
+                        val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
+                        startActivity(intent)
+                        finish()
+                    } catch (e: HttpException) {
+                        showLoading(false)
+                        Log.d(TAG, "btnRegister: ${e.message}")
+                        showToast("Gagal membuat akun. Coba lagi!")
+                    } catch (e: Exception) {
+                        showLoading(false)
+                        Log.d(TAG, "btnRegister: ${e.message}")
+                        showToast("Gagal membuat akun. Silahkan coba lagi!")
+                    }
                 }
             }
         }
