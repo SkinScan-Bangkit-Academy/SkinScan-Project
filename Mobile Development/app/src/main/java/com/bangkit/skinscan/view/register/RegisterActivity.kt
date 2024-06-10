@@ -52,15 +52,15 @@ class RegisterActivity : AppCompatActivity() {
             val password = binding.etPw.text.toString().trim()
 
             if (name.isEmpty()){
-                binding.etUsername.error = getString(R.string.data_kosong)
+                binding.etUsername.error = getString(R.string.invalid_data)
                 return@setOnClickListener
             }
             if (email.isEmpty()) {
-                binding.etEmail.error = getString(R.string.data_kosong)
+                binding.etEmail.error = getString(R.string.invalid_data)
                 return@setOnClickListener
             }
             if (password.isEmpty()) {
-                binding.etPw.error = getString(R.string.data_kosong)
+                binding.etPw.error = getString(R.string.invalid_data)
                 return@setOnClickListener
             }
 

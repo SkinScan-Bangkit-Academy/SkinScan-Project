@@ -50,11 +50,11 @@ class LoginActivity : AppCompatActivity() {
             val pass = binding.etPw.text.toString().trim()
 
             if (email.isEmpty()) {
-                binding.etEmail.error = getString(R.string.data_kosong)
+                binding.etEmail.error = getString(R.string.invalid_data)
                 return@setOnClickListener
             }
             if (pass.isEmpty()) {
-                binding.etPw.error = getString(R.string.data_kosong)
+                binding.etPw.error = getString(R.string.invalid_data)
                 return@setOnClickListener
             }
 
