@@ -88,4 +88,5 @@
     <string name="label">%s</string>
     <string name="title_article">Le\'ts Read The Article !</string>
     <string name="img_article">img_article</string>
+    <string name="invalid_email">Email tidak valid</string>
 </resources>
