@@ -60,7 +60,7 @@
             android:textSize="15sp"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
-            android:fontFamily="@font/roboto_medium" />
+            android:fontFamily="@font/roboto_regular" />
 
 
     </LinearLayout>

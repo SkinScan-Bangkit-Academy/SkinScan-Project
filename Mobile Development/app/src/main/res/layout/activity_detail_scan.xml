@@ -42,8 +42,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="60dp"
             android:paddingEnd="13dp"
             android:paddingStart="13dp"
             app:cardCornerRadius="16dp"
@@ -52,7 +52,7 @@
         <ImageView
             android:id="@+id/imgView"
             android:layout_width="100dp"
-            android:layout_height="70dp"
+            android:layout_height="90dp"
             android:scaleType="centerCrop"
             tools:src="@tools:sample/backgrounds/scenic"/>
     </androidx.cardview.widget.CardView>

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
-    tools:context=".view.main.HomeActivity">
+    tools:context=".view.main.MainActivity">
 
     <FrameLayout
         android:id="@+id/container"
@@ -21,10 +20,10 @@
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/nav_menu"
-        android:scrollIndicators="left"/>
+        app:itemIconTint="@color/bottom_nav_icon_color"
+        app:itemTextColor="@color/bottom_nav_text_color"
+        app:itemTextAppearanceActiveBoldEnabled="true"
+        app:itemActiveIndicatorStyle="@color/thirdColor"
+        android:background="@color/primaryColor"/>
 </RelativeLayout>
