@@ -1,6 +1,7 @@
 package com.bangkit.skinscan.fragment
 
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -17,10 +18,12 @@ import androidx.camera.core.ImageCapture
 import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
+import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.bangkit.skinscan.databinding.FragmentCameraBinding
 import com.bangkit.skinscan.utils.createCustomTempFile
+import com.bangkit.skinscan.view.scan.DetailScanActivity
 
 class CameraFragment : Fragment() {
 
@@ -41,8 +44,33 @@ class CameraFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        if (allPermissionsGranted()){
+            startCamera()
+        } else {
+            ActivityCompat.requestPermissions(requireActivity(), REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS)
+        }
         switchCamera()
         binding.captureImage.setOnClickListener { takePhoto() }
+    }
+
+    @Deprecated("Deprecated in Java")
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        if (requestCode == REQUEST_CODE_PERMISSIONS){
+            if (allPermissionsGranted()){
+                startCamera()
+            } else {
+                Toast.makeText(context, "Permissions not granted by the user.", Toast.LENGTH_SHORT).show()
+                requireActivity().finish()
+            }
+        }
+    }
+
+    private fun allPermissionsGranted() = REQUIRED_PERMISSIONS.all {
+        ContextCompat.checkSelfPermission(requireContext(), it) == PackageManager.PERMISSION_GRANTED
     }
 
     override fun onResume() {
@@ -87,10 +115,11 @@ class CameraFragment : Fragment() {
             ContextCompat.getMainExecutor(requireContext()),
             object : ImageCapture.OnImageSavedCallback {
                 override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
-                    val intent = Intent()
-                    intent.putExtra(EXTRA_CAMERAX_IMAGE, Uri.fromFile(photoFile).toString())
-                    requireActivity().setResult(CAMERAX_RESULT, intent)
-                    requireActivity().finish()
+                    val savedUri = Uri.fromFile(photoFile)
+                    val intent = Intent(requireContext(), DetailScanActivity::class.java).apply {
+                        putExtra(DetailScanActivity.EXTRA_IMAGE_URI, savedUri.toString())
+                    }
+                    startActivity(intent)
                 }
 
                 override fun onError(exception: ImageCaptureException) {
@@ -133,7 +162,7 @@ class CameraFragment : Fragment() {
 
     companion object {
         private const val TAG = "Camera Fragment"
-        const val EXTRA_CAMERAX_IMAGE = "CameraX Image"
-        const val CAMERAX_RESULT = 200
+        private const val REQUEST_CODE_PERMISSIONS = 1
+        private val REQUIRED_PERMISSIONS = arrayOf(android.Manifest.permission.CAMERA)
     }
 }
