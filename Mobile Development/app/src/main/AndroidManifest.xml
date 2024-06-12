@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-feature android:name="android.hardware.camera" />
 
@@ -19,7 +19,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SkinScan"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".view.main.MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SkinScan" />
+        <activity
+            android:name=".history.HistoryActivity"
+            android:exported="false" />
         <activity
             android:name=".article.DetailArticleActivity"
             android:exported="false" />
@@ -39,7 +46,7 @@
             android:exported="false" />
         <activity
             android:name=".view.splash.SplashScreen"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -55,12 +62,27 @@
         <activity
             android:name=".view.main.HomeActivity"
             android:exported="false" />
+        <activity
+            android:name=".fragment.HomeFragment"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.ArticleFragment"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.CameraFragment"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.HistoryFragment"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.ProfileFragment"
+            android:exported="false" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"
             android:exported="false"
-            android:grantUriPermissions="true" >
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
@@ -70,7 +92,7 @@
             android:name="com.google.android.gms.metadata.ModuleDependencies"
             android:enabled="false"
             android:exported="false"
-            tools:ignore="MissingClass" >
+            tools:ignore="MissingClass">
             <intent-filter>
                 <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
             </intent-filter>

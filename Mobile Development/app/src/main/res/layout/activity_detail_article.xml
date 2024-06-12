@@ -38,6 +38,23 @@
                 tools:src="@tools:sample/backgrounds/scenic"/>
         </androidx.cardview.widget.CardView>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="25dp"
+            tools:text="@tools:sample/full_names"
+            android:fontFamily="@font/roboto_medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="40dp"
+            tools:text="@tools:sample/full_names"
+            android:fontFamily="@font/roboto_regular" />
+
+
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

@@ -7,7 +7,6 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.bangkit.skinscan.R
 import com.bangkit.skinscan.view.ViewModelFactory
-import com.bangkit.skinscan.view.main.HomeActivity
 import com.bangkit.skinscan.view.onboarding.OnBoarding
 
 class SplashScreen : AppCompatActivity() {
@@ -24,7 +23,7 @@ class SplashScreen : AppCompatActivity() {
                     startActivity(Intent( this, OnBoarding::class.java))
                     finish()
                 } else {
-                    val intent = Intent(this@SplashScreen, HomeActivity::class.java).apply {
+                    val intent = Intent(this@SplashScreen, OnBoarding::class.java).apply {
                         flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                     }
                     startActivity(intent)

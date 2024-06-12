@@ -9,8 +9,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bangkit.skinscan.R
 import com.bangkit.skinscan.databinding.ActivityOnBoardingBinding
 import com.bangkit.skinscan.view.login.LoginActivity
-import com.bangkit.skinscan.view.main.HomeActivity
-import com.bangkit.skinscan.view.register.RegisterActivity
 import com.ncorti.slidetoact.SlideToActView
 
 class OnBoarding : AppCompatActivity() {
