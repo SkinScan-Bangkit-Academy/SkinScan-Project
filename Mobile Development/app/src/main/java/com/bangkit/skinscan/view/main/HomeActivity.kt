@@ -53,36 +53,6 @@ class HomeActivity : AppCompatActivity() {
 //        }
     }
 
-    private fun startGallery() {
-        launcherGallery.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
-    }
-    private val launcherGallery = registerForActivityResult(
-        ActivityResultContracts.PickVisualMedia()
-    ){ uri: Uri? ->
-        if (uri != null){
-            currentImageUri = uri
-            moveToResult(uri)
-        } else {
-            Log.d("Photo Picker", "No media selected")
-        }
-    }
-
-    //camera
-//    private fun startCamera(){
-//        currentImageUri = getImageUri(this)
-//        launcherIntentCamera.launch(currentImageUri)
-//    }
-
-    private val launcherIntentCamera = registerForActivityResult(
-        ActivityResultContracts.TakePicture()
-    ) { isSuccess ->
-        if (isSuccess){
-            currentImageUri?.let {
-                moveToResult(it)
-            }
-        }
-    }
-
     private fun moveToResult(uri: Uri){
         val intent = Intent(this, DetailScanActivity::class.java)
         intent.putExtra(DetailScanActivity.EXTRA_IMAGE_URI, uri.toString())
