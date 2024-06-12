@@ -1,0 +1,144 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/setting"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/desc_setting" />
+
+        <TextView
+            android:id="@+id/nameapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textColor="@color/primaryColor" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameapp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/Home_logo" />
+
+        <SearchView
+            android:id="@+id/sv_main"
+            android:background="@drawable/edittext_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameapp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:queryHint="@string/search_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_margin="30dp"
+            android:textSize="25sp"
+            android:text="@string/hi"
+            android:textColor="@color/primaryColor"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_below="@id/sv_main" />
+
+        <LinearLayout
+            android:id="@+id/opening"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@id/sv_main"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="0dp"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:fontFamily="@font/roboto_medium"
+                android:textStyle="bold"
+                android:textColor="@color/primaryColor"
+                android:textSize="25sp"
+                tools:text="@tools:sample/full_names" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/desc_name"
+                android:textColor="@color/blue_transparan"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="5dp" />
+
+            <ImageView
+                android:id="@+id/img_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/img_doctor"
+                android:contentDescription="@string/home_img" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/content_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/opening"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/title_type"
+                android:textSize="17sp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/primaryColor"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/bg_rv"
+                android:layout_width="370dp"
+                android:layout_height="215dp"
+                android:layout_below="@id/title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/bg_search"
+                android:contentDescription="@string/bg_rv" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="350dp"
+                android:layout_height="600dp"
+                android:layout_below="@id/title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="665dp"
+            android:src="@drawable/camera"
+            android:contentDescription="@string/ic_cam" />
+    </RelativeLayout>
+</FrameLayout>

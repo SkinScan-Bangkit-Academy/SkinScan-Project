@@ -14,7 +14,7 @@ import com.bangkit.skinscan.R
 import com.bangkit.skinscan.data.preference.UserModel
 import com.bangkit.skinscan.databinding.ActivityLoginBinding
 import com.bangkit.skinscan.view.ViewModelFactory
-import com.bangkit.skinscan.view.main.HomeActivity
+import com.bangkit.skinscan.view.main.MainActivity
 import com.bangkit.skinscan.view.register.RegisterActivity
 import kotlinx.coroutines.launch
 
@@ -88,7 +88,7 @@ class LoginActivity : AppCompatActivity() {
 
     private suspend fun saveSession(session: UserModel) {
         loginViewModel.saveSession(session)
-        val intent = Intent(this@LoginActivity, HomeActivity::class.java)
+        val intent = Intent(this@LoginActivity, MainActivity::class.java)
         ViewModelFactory.clearInstance()
         startActivity(intent)
         finish()

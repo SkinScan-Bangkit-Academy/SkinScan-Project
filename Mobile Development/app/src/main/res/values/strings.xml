@@ -91,4 +91,8 @@
     <string name="invalid_email">Email tidak valid</string>
     <string name="invalid_data">data tidak boleh kosong</string>
     <string name="invalid_pass">Password kurang dari 8 karakter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="capture_image">capture_image</string>
+    <string name="switch_camera">switch_camera</string>
 </resources>
