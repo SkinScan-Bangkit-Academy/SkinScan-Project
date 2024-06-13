@@ -26,10 +26,9 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="330dp"
-            android:layout_height="55dp"
+            android:layout_height="60dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/edittext_shape">
+            android:layout_marginTop="20dp">
 
             <com.bangkit.skinscan.view.customview.EditTextEmailCustom
                 android:id="@+id/et_email"
@@ -38,24 +37,27 @@
                 android:fontFamily="@font/roboto_regular"
                 android:hint="@string/hint_gmail"
                 android:paddingStart="20dp"
+                android:paddingHorizontal="20dp"
                 android:inputType="textEmailAddress"
                 android:paddingEnd="20dp"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+
+                android:background="@drawable/edittext_shape"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="330dp"
-            android:layout_height="55dp"
+            android:layout_height="60dp"
             android:layout_marginTop="10dp"
             android:layout_gravity="center"
-            android:background="@drawable/edittext_shape"
             app:endIconMode="password_toggle">
 
             <com.bangkit.skinscan.view.customview.EditTextPasswordCustom
                 android:id="@+id/et_pw"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/edittext_shape"
                 android:hint="@string/hint_pw"
                 android:textSize="15sp"
                 android:inputType="textPassword"
