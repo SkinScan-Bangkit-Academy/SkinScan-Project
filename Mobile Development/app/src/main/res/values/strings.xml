@@ -95,4 +95,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="capture_image">capture_image</string>
     <string name="switch_camera">switch_camera</string>
+    <string name="camera">Scan</string>
 </resources>

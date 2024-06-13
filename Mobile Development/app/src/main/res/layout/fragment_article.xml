@@ -35,7 +35,8 @@
            android:layout_below="@id/title_article"
            android:layout_marginLeft="15dp"
            android:layout_marginRight="15dp"
-           android:queryHint="Find your Lovely Article"/>
+           android:iconifiedByDefault="false"
+           android:queryHint="Find your Lovely Article" />
 
        <androidx.recyclerview.widget.RecyclerView
            android:layout_width="match_parent"
