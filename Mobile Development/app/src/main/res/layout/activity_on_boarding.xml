@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primaryColor"
-    app:layoutDescription="@xml/activity_on_boarding1_scene">
+    app:layoutDescription="@xml/activity_on_boarding_scene">
 
     <TextView
         android:id="@+id/onboardingword1"
@@ -86,21 +86,21 @@
         tools:alpha="100" />
 
     <ImageView
-    android:id="@+id/logoMenu2"
-    android:layout_width="300dp"
-    android:layout_height="300dp"
-    android:src="@drawable/contoh_logo"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintStart_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.3" />
+        android:id="@+id/logoMenu2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/logoo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
 
     <TextView
         android:id="@+id/descMenu2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:fontFamily="@font/roboto_regular"
+        android:layout_marginStart="29dp"
         android:gravity="center"
         android:text="@string/descSlide_2"
         android:textColor="@color/thirdColor"
@@ -113,14 +113,13 @@
 
     <com.ncorti.slidetoact.SlideToActView
         android:id="@+id/slideToAct"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="90dp"
-        android:textAlignment="center"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="170dp"
         app:bounce_on_start="true"
-        app:inner_color="@color/blue_1"
-        app:layout_constraintStart_toStartOf="@id/descMenu2"
-        app:layout_constraintTop_toBottomOf="@id/descMenu2"
+        app:inner_color="@color/primaryColor"
+        app:layout_constraintStart_toStartOf="@id/logoMenu2"
+        app:layout_constraintTop_toBottomOf="@id/logoMenu2"
         app:outer_color="@color/blue_2"
         app:slider_icon_color="@color/thirdColor"
         app:text="Slide To Act"
@@ -129,8 +128,8 @@
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/menu1"
-        android:layout_width="20dp"
-        android:layout_height="30dp"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
         android:layout_marginTop="250dp"
         app:altSrc="@drawable/ic_circle_full_24"
         app:layout_constraintStart_toStartOf="parent"
@@ -144,8 +143,8 @@
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/menu2"
-        android:layout_width="20dp"
-        android:layout_height="30dp"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
         app:altSrc="@drawable/ic_circle_full_24"
         app:layout_constraintStart_toEndOf="@id/menu1"
         app:layout_constraintEnd_toEndOf="parent"

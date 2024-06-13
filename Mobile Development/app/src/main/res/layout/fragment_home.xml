@@ -7,12 +7,16 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logoo"
+            android:contentDescription="@string/Home_logo" />
+        <Button
             android:id="@+id/setting"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:src="@drawable/setting"
+            android:background="@drawable/setting"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
@@ -29,12 +33,6 @@
             android:textSize="20sp"
             android:textColor="@color/primaryColor" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/nameapp"
-            android:layout_centerHorizontal="true"
-            android:contentDescription="@string/Home_logo" />
 
         <SearchView
             android:id="@+id/sv_main"
@@ -45,19 +43,10 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:layout_marginTop="20dp"
-            android:queryHint="@string/search_text" />
+            android:queryHint="@string/search_text"
+            android:iconifiedByDefault="false"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="5dp"
-            android:paddingEnd="5dp"
-            android:layout_margin="30dp"
-            android:textSize="25sp"
-            android:text="@string/hi"
-            android:textColor="@color/primaryColor"
-            android:fontFamily="@font/roboto_medium"
-            android:layout_below="@id/sv_main" />
+
 
         <LinearLayout
             android:id="@+id/opening"
@@ -65,21 +54,33 @@
             android:layout_height="350dp"
             android:layout_below="@id/sv_main"
             android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginEnd="30dp"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
                 android:layout_marginTop="30dp"
-                android:layout_marginBottom="0dp"
-                android:paddingStart="40dp"
-                android:paddingEnd="40dp"
-                android:fontFamily="@font/roboto_medium"
-                android:textStyle="bold"
-                android:textColor="@color/primaryColor"
-                android:textSize="25sp"
-                tools:text="@tools:sample/full_names" />
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:layout_marginStart="30dp"
+                    android:textSize="25sp"
+                    android:text="@string/hi"
+                    android:textColor="@color/primaryColor"
+                    android:fontFamily="@font/roboto_medium" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:layout_marginEnd="100dp"
+                    android:textSize="25sp"
+                    tools:text="@tools:sample/full_names"
+                    android:textColor="@color/primaryColor"
+                    android:fontFamily="@font/roboto_medium" />
+            </LinearLayout>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -118,7 +119,7 @@
             <ImageView
                 android:id="@+id/bg_rv"
                 android:layout_width="370dp"
-                android:layout_height="215dp"
+                android:layout_height="match_parent"
                 android:layout_below="@id/title"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
@@ -132,13 +133,5 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp" />
         </RelativeLayout>
-
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="665dp"
-            android:src="@drawable/camera"
-            android:contentDescription="@string/ic_cam" />
     </RelativeLayout>
 </FrameLayout>

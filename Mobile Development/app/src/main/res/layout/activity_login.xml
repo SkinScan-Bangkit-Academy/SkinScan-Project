@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -24,45 +23,31 @@
             android:fontFamily="@font/roboto_medium"
             android:textSize="26sp"/>
 
-        <com.google.android.material.textfield.TextInputLayout
+        <com.bangkit.skinscan.view.customview.EditTextEmailCustom
+            android:id="@+id/et_email"
             android:layout_width="330dp"
             android:layout_height="55dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:background="@drawable/edittext_shape">
+            android:background="@drawable/edittext_shape"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="@string/hint_gmail"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="15sp" />
 
-            <com.bangkit.skinscan.view.customview.EditTextEmailCustom
-                android:id="@+id/et_email"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/roboto_regular"
-                android:hint="@string/hint_gmail"
-                android:paddingStart="20dp"
-                android:inputType="textEmailAddress"
-                android:paddingEnd="20dp"
-                android:textSize="15sp" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
+        <com.bangkit.skinscan.view.customview.EditTextPasswordCustom
+            android:id="@+id/et_pw"
             android:layout_width="330dp"
             android:layout_height="55dp"
             android:layout_marginTop="10dp"
             android:layout_gravity="center"
             android:background="@drawable/edittext_shape"
-            app:endIconMode="password_toggle">
-
-            <com.bangkit.skinscan.view.customview.EditTextPasswordCustom
-                android:id="@+id/et_pw"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="@string/hint_pw"
-                android:textSize="15sp"
-                android:inputType="textPassword"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:fontFamily="@font/roboto_regular" />
-        </com.google.android.material.textfield.TextInputLayout>
+            android:hint="@string/hint_pw"
+            android:textSize="15sp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:fontFamily="@font/roboto_regular" />
 
 
     </LinearLayout>
