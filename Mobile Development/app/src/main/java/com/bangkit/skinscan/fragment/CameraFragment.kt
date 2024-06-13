@@ -21,6 +21,7 @@ import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import com.bangkit.skinscan.R
 import com.bangkit.skinscan.databinding.FragmentCameraBinding
 import com.bangkit.skinscan.utils.createCustomTempFile
 import com.bangkit.skinscan.view.scan.DetailScanActivity
@@ -63,7 +64,8 @@ class CameraFragment : Fragment() {
             if (allPermissionsGranted()){
                 startCamera()
             } else {
-                Toast.makeText(context, "Permissions not granted by the user.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context,
+                    getString(R.string.permissions_not_granted), Toast.LENGTH_SHORT).show()
                 requireActivity().finish()
             }
         }
@@ -99,7 +101,8 @@ class CameraFragment : Fragment() {
                     imageCapture
                 )
             } catch (exc: Exception){
-                Toast.makeText(requireContext(), "Gagal memunculkan kamera", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(),
+                    getString(R.string.camera_unavailable), Toast.LENGTH_SHORT).show()
                 Log.e(TAG, "startCamera: ${exc.message}")
             }
         }, ContextCompat.getMainExecutor(requireContext()))
@@ -123,7 +126,8 @@ class CameraFragment : Fragment() {
                 }
 
                 override fun onError(exception: ImageCaptureException) {
-                    Toast.makeText(requireContext(), "Gagal mengambil gambar.", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(),
+                        getString(R.string.failed_to_take_a_picture), Toast.LENGTH_SHORT).show()
                     Log.e(TAG, "onError: ${exception.message}")
                 }
 

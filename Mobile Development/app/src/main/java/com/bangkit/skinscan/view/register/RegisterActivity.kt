@@ -12,7 +12,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import com.bangkit.skinscan.R
-import com.bangkit.skinscan.data.remote.user.request.RegisterRequest
 import com.bangkit.skinscan.databinding.ActivityRegisterBinding
 import com.bangkit.skinscan.view.ViewModelFactory
 import com.bangkit.skinscan.view.login.LoginActivity
@@ -76,7 +75,7 @@ class RegisterActivity : AppCompatActivity() {
                 lifecycleScope.launch {
                     try {
                         showLoading(false)
-                        showToast("Akun berhasil dibuat")
+                        showToast(getString(R.string.new_account))
                         Log.d(TAG, "btnRegister: ${it.message}")
 
                         val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
@@ -85,11 +84,11 @@ class RegisterActivity : AppCompatActivity() {
                     } catch (e: HttpException) {
                         showLoading(false)
                         Log.d(TAG, "btnRegister: ${e.message}")
-                        showToast("Gagal membuat akun. Coba lagi!")
+                        showToast(getString(R.string.new_account_failed))
                     } catch (e: Exception) {
                         showLoading(false)
                         Log.d(TAG, "btnRegister: ${e.message}")
-                        showToast("Gagal membuat akun. Silahkan coba lagi!")
+                        showToast(getString(R.string.new_account_failed))
                     }
                 }
             }

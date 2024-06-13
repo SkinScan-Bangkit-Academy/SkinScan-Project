@@ -7,16 +7,13 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import com.bangkit.skinscan.R
 import com.bangkit.skinscan.data.DiseaseData
 import com.bangkit.skinscan.data.Labels
 import com.bangkit.skinscan.databinding.ActivityDetailScanBinding
-import com.bangkit.skinscan.helper.ImageClassifierHelper
 import com.bangkit.skinscan.ml.Model
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
-import org.tensorflow.lite.task.vision.classifier.Classifications
 import java.io.File
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
@@ -41,16 +38,17 @@ class DetailScanActivity : AppCompatActivity() {
             val label = classifyImage(resizedBitmap)
             binding.label.text = label
 
-            val diseaseInfo = DiseaseData.diseaseInfoMap[label]
+            val diseaseInfoMap = DiseaseData.getDiseaseInfoMap(this)
+            val diseaseInfo = diseaseInfoMap[label]
 
             if (diseaseInfo != null){
                 binding.diseaseExpTv.text = diseaseInfo["explanation"] //pengertian penyakit
-                binding.drugRecommendTv.text = diseaseInfo["recommendation"] //rekomendasi obat
-                binding.diseasePreTv.text = diseaseInfo["prevention"] //pencegahan penyakit
+                binding.drugRecTv.text = diseaseInfo["recommendation"] //rekomendasi obat
+                binding.diseasePrevTv.text = diseaseInfo["prevention"] //pencegahan penyakit
             } else {
-                binding.diseaseExpTv.text = "Details unavailable"
-                binding.drugRecommendTv.text = "No medicine recommendation can be provided at this time."
-                binding.diseasePreTv.text = "Unfortunately, we cannot provide any specific recommendations for preventing this disease."
+                binding.diseaseExpTv.text = getString(R.string.details_unavailable)
+                binding.drugRecTv.text = getString(R.string.drug_recommend_unavailable)
+                binding.diseasePrevTv.text = getString(R.string.preventive_unavailable)
             }
         }
     }

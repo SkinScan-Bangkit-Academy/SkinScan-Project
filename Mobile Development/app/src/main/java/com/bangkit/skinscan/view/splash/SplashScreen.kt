@@ -24,7 +24,7 @@ class SplashScreen : AppCompatActivity() {
                     startActivity(Intent( this, OnBoarding::class.java))
                     finish()
                 } else {
-                    val intent = Intent(this@SplashScreen, OnBoarding::class.java).apply {
+                    val intent = Intent(this@SplashScreen, MainActivity::class.java).apply {
                         flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                     }
                     startActivity(intent)

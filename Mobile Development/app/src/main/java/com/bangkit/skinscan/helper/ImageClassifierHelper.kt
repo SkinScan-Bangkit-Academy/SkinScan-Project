@@ -8,23 +8,16 @@ import android.os.Build
 import android.os.SystemClock
 import android.provider.MediaStore
 import android.util.Log
-import android.view.Surface
-import androidx.camera.core.ImageProxy
-import com.bangkit.skinscan.R
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.common.ops.CastOp
 import org.tensorflow.lite.support.common.ops.NormalizeOp
 import org.tensorflow.lite.support.image.ImageProcessor
 import org.tensorflow.lite.support.image.TensorImage
 import org.tensorflow.lite.support.image.ops.ResizeOp
-import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import org.tensorflow.lite.task.core.BaseOptions
-import org.tensorflow.lite.task.core.vision.ImageProcessingOptions
 import org.tensorflow.lite.task.vision.classifier.Classifications
 import org.tensorflow.lite.task.vision.classifier.ImageClassifier
 import java.lang.IllegalStateException
-import java.nio.ByteBuffer
-import java.nio.ByteOrder
 
 class ImageClassifierHelper(
     var threshold: Float = 0.1f,
@@ -54,7 +47,7 @@ class ImageClassifierHelper(
                 optionsBuilder.build()
             )
         } catch (e: IllegalStateException) {
-            classifierListener?.onError("failed to inilized")
+            classifierListener?.onError("failed to initialized")
             Log.e(TAG, e.message.toString())
         }
     }

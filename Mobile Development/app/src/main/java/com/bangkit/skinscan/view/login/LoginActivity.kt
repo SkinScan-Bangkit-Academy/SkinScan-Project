@@ -68,7 +68,7 @@ class LoginActivity : AppCompatActivity() {
 
             loginViewModel.loginResult.observe(this) { result ->
                     // Login successful, save session
-                    showToast("login succefully!")
+                    showToast(getString(R.string.login_success))
                     lifecycleScope.launch {
                         saveSession(
                             UserModel(

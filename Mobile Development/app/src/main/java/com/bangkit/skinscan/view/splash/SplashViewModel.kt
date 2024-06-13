@@ -7,9 +7,6 @@ import com.bangkit.skinscan.data.preference.UserModel
 import com.bangkit.skinscan.data.repository.Repository
 
 class SplashViewModel(private val repository: Repository): ViewModel() {
-    suspend fun logout(){
-        repository.logout()
-    }
 
     fun getSession(): LiveData<UserModel>{
         return repository.getSession().asLiveData()
