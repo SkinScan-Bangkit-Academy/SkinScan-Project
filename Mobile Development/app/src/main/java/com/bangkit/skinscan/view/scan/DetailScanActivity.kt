@@ -9,6 +9,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.bangkit.skinscan.R
+import com.bangkit.skinscan.data.DiseaseData
+import com.bangkit.skinscan.data.Labels
 import com.bangkit.skinscan.databinding.ActivityDetailScanBinding
 import com.bangkit.skinscan.helper.ImageClassifierHelper
 import com.bangkit.skinscan.ml.Model
@@ -38,6 +40,18 @@ class DetailScanActivity : AppCompatActivity() {
             val resizedBitmap = Bitmap.createScaledBitmap(bitmap, 150, 150, true)
             val label = classifyImage(resizedBitmap)
             binding.label.text = label
+
+            val diseaseInfo = DiseaseData.diseaseInfoMap[label]
+
+            if (diseaseInfo != null){
+                binding.diseaseExpTv.text = diseaseInfo["explanation"] //pengertian penyakit
+                binding.drugRecommendTv.text = diseaseInfo["recommendation"] //rekomendasi obat
+                binding.diseasePreTv.text = diseaseInfo["prevention"] //pencegahan penyakit
+            } else {
+                binding.diseaseExpTv.text = "Details unavailable"
+                binding.drugRecommendTv.text = "No medicine recommendation can be provided at this time."
+                binding.diseasePreTv.text = "Unfortunately, we cannot provide any specific recommendations for preventing this disease."
+            }
         }
     }
 
@@ -85,12 +99,10 @@ class DetailScanActivity : AppCompatActivity() {
     private fun getLabelFromOutput(output: TensorBuffer): String {
         val outputArray = output.floatArray
         val maxIndex = outputArray.indices.maxByOrNull { outputArray[it] } ?: -1
-        return  if (maxIndex != -1) labels[maxIndex] else "Unknown"
+        return  if (maxIndex != -1) Labels.diseaseLabels[maxIndex] else "Unknown"
     }
 
     companion object {
         const val EXTRA_IMAGE_URI = "extra_image_uri"
-        val labels = arrayOf("Dermatitis Atopik", "Eksim", "Infeksi Jamur", "Infeksi Virus",
-                "Karsinoma Sel Basal", "Kutil", "Melanoma", "Psoriasis", "Tahi Lalat", "Tumor Jinak")
     }
 }
