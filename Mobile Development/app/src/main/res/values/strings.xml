@@ -134,4 +134,13 @@
     <string name="tumor_jinak_details">Benign tumors (Tumor jinak) are non-cancerous growths that do not spread to other parts of the body and are usually harmless.</string>
     <string name="tumor_jinak_drug">No over-the-counter medications; diagnosis and evaluation by a doctor are necessary to confirm the tumor is benign.</string>
     <string name="tumor_jinak_prevention">Avoiding excessive sun exposure and using sunscreen to protect the skin. Maintaining overall skin health with proper care.</string>
+    <string name="photoprofile">photoProfile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="information_account">Information Account</string>
+    <string name="change_password">Change Password</string>
+    <string name="language">Language</string>
+    <string name="term_and_condition">Term and Condition</string>
+    <string name="privacy_and_police">Privacy and Police</string>
+    <string name="rating_this_app">Rating This App</string>
+    <string name="log_out">Log Out</string>
 </resources>
