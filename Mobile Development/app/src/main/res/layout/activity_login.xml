@@ -10,6 +10,7 @@
         android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:orientation="vertical"
         android:padding="20dp">
 
@@ -109,7 +110,7 @@
         android:progressTint="@color/primaryColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="310dp"
         android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

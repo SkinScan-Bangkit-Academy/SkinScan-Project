@@ -34,7 +34,7 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.logoutBtn.setOnClickListener { logoutBtn() }
-        binding.languange.setOnClickListener {
+        binding.Languange.setOnClickListener {
             startActivity(Intent(Settings.ACTION_LOCALE_SETTINGS))
         }
     }

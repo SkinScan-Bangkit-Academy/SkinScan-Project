@@ -201,8 +201,8 @@ class CameraFragment : Fragment() {
 
     private fun updateFlashButtonIcon(image: ImageView){
         val iconRes = when(flashMode){
-            ImageCapture.FLASH_MODE_ON -> R.drawable.flashlight
-            else -> R.drawable.flashlight
+            ImageCapture.FLASH_MODE_ON -> R.drawable.baseline_flashlight_on_24
+            else -> R.drawable.baseline_flashlight_off_24
         }
         image.setImageResource(iconRes)
     }
