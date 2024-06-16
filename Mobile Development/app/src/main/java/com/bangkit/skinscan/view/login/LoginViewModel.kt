@@ -6,8 +6,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.bangkit.skinscan.data.preference.UserModel
-import com.bangkit.skinscan.data.remote.user.request.LoginRequest
-import com.bangkit.skinscan.data.remote.user.response.LoginResponse
+import com.bangkit.skinscan.data.remote.request.LoginRequest
+import com.bangkit.skinscan.data.remote.response.LoginResponse
 import com.bangkit.skinscan.data.repository.Repository
 import kotlinx.coroutines.launch
 

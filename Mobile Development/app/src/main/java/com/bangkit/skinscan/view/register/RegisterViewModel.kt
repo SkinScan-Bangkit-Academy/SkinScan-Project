@@ -5,8 +5,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.bangkit.skinscan.data.remote.user.request.RegisterRequest
-import com.bangkit.skinscan.data.remote.user.response.RegisterResponse
+import com.bangkit.skinscan.data.remote.request.RegisterRequest
+import com.bangkit.skinscan.data.remote.response.RegisterResponse
 import com.bangkit.skinscan.data.repository.Repository
 import kotlinx.coroutines.launch
 

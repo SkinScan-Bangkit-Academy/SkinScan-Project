@@ -1,4 +1,4 @@
-package com.bangkit.skinscan.data.remote.user.request
+package com.bangkit.skinscan.data.remote.request
 
 data class RegisterRequest(
     val email: String,

@@ -1,14 +1,13 @@
 package com.bangkit.skinscan.data.remote
 
 import com.bangkit.skinscan.BuildConfig
-import com.bangkit.skinscan.data.remote.user.ApiServiceUser
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiConfig {
-    fun getApiService(): ApiServiceUser {
+    fun getApiService(): ApiService {
         val loggingInterceptor =
             HttpLoggingInterceptor().setLevel(
                 if (BuildConfig.DEBUG)
@@ -24,6 +23,6 @@ object ApiConfig {
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()
-        return retrofit.create(ApiServiceUser::class.java)
+        return retrofit.create(ApiService::class.java)
     }
 }

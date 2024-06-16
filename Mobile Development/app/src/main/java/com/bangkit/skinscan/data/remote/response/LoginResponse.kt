@@ -1,4 +1,4 @@
-package com.bangkit.skinscan.data.remote.user.response
+package com.bangkit.skinscan.data.remote.response
 
 import com.google.gson.annotations.SerializedName
 
@@ -13,16 +13,16 @@ data class LoginResponse(
 
 data class UserCredential(
 
-	@field:SerializedName("providerId")
+    @field:SerializedName("providerId")
 	val providerId: Any,
 
-	@field:SerializedName("_tokenResponse")
+    @field:SerializedName("_tokenResponse")
 	val tokenResponse: TokenResponse,
 
-	@field:SerializedName("operationType")
+    @field:SerializedName("operationType")
 	val operationType: String,
 
-	@field:SerializedName("user")
+    @field:SerializedName("user")
 	val user: User
 )
 
@@ -61,34 +61,34 @@ data class StsTokenManager(
 
 data class User(
 
-	@field:SerializedName("uid")
+    @field:SerializedName("uid")
 	val uid: String,
 
-	@field:SerializedName("emailVerified")
+    @field:SerializedName("emailVerified")
 	val emailVerified: Boolean,
 
-	@field:SerializedName("createdAt")
+    @field:SerializedName("createdAt")
 	val createdAt: String,
 
-	@field:SerializedName("isAnonymous")
+    @field:SerializedName("isAnonymous")
 	val isAnonymous: Boolean,
 
-	@field:SerializedName("stsTokenManager")
+    @field:SerializedName("stsTokenManager")
 	val stsTokenManager: StsTokenManager,
 
-	@field:SerializedName("lastLoginAt")
+    @field:SerializedName("lastLoginAt")
 	val lastLoginAt: String,
 
-	@field:SerializedName("apiKey")
+    @field:SerializedName("apiKey")
 	val apiKey: String,
 
-	@field:SerializedName("providerData")
+    @field:SerializedName("providerData")
 	val providerData: List<ProviderDataItem>,
 
-	@field:SerializedName("appName")
+    @field:SerializedName("appName")
 	val appName: String,
 
-	@field:SerializedName("email")
+    @field:SerializedName("email")
 	val email: String
 )
 

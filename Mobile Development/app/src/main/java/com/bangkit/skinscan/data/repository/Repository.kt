@@ -2,24 +2,24 @@ package com.bangkit.skinscan.data.repository
 
 import com.bangkit.skinscan.data.preference.UserModel
 import com.bangkit.skinscan.data.preference.UserPreference
-import com.bangkit.skinscan.data.remote.user.ApiServiceUser
-import com.bangkit.skinscan.data.remote.user.request.LoginRequest
-import com.bangkit.skinscan.data.remote.user.request.RegisterRequest
-import com.bangkit.skinscan.data.remote.user.response.LoginResponse
-import com.bangkit.skinscan.data.remote.user.response.RegisterResponse
+import com.bangkit.skinscan.data.remote.ApiService
+import com.bangkit.skinscan.data.remote.request.LoginRequest
+import com.bangkit.skinscan.data.remote.request.RegisterRequest
+import com.bangkit.skinscan.data.remote.response.LoginResponse
+import com.bangkit.skinscan.data.remote.response.RegisterResponse
 import kotlinx.coroutines.flow.Flow
 
 class Repository private constructor(
-    private val apiServiceUser: ApiServiceUser,
+    private val apiService: ApiService,
     private val userPreference: UserPreference
 ){
 
     suspend fun register(request: RegisterRequest): RegisterResponse {
-        return apiServiceUser.register(request)
+        return apiService.register(request)
     }
 
     suspend fun login(request: LoginRequest): LoginResponse {
-        return apiServiceUser.login(request)
+        return apiService.login(request)
     }
 
     suspend fun saveSession(userModel: UserModel){
@@ -42,9 +42,9 @@ class Repository private constructor(
             instance = null
         }
 
-        fun getInstance(apiServiceUser: ApiServiceUser, userPreference: UserPreference): Repository =
+        fun getInstance(apiService: ApiService, userPreference: UserPreference): Repository =
             instance ?: synchronized(this){
-                instance ?: Repository(apiServiceUser, userPreference)
+                instance ?: Repository(apiService, userPreference)
             }.also { instance = it }
 
         private const val TAG = "Repository"

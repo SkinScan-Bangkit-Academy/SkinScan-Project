@@ -1,4 +1,4 @@
-package com.bangkit.skinscan.data.remote.user.response
+package com.bangkit.skinscan.data.remote.response
 
 import com.google.gson.annotations.SerializedName
 
