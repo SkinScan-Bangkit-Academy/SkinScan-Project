@@ -47,7 +47,6 @@
     <string name="word5">To solve this problem ?</string>
     <string name="desc_onboarding2">The best solution is to use the SkinScan app, which identifies skin issues and offers personalized treatment recommendations.</string>
     <string name="descSlide_2">The best solution is to use the SkinScan app, which identifies skin issues and offers personalized treatment recommendations.</string>
-    <string name="title_activity_camera">CameraActivity</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris

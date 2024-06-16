@@ -1,5 +1,9 @@
 package com.bangkit.skinscan.data.repository
 
+import androidx.lifecycle.LiveData
+import androidx.paging.Pager
+import androidx.paging.PagingConfig
+import androidx.paging.PagingData
 import com.bangkit.skinscan.data.preference.UserModel
 import com.bangkit.skinscan.data.preference.UserPreference
 import com.bangkit.skinscan.data.remote.ApiService
@@ -33,6 +37,17 @@ class Repository private constructor(
     suspend fun logout(){
         userPreference.logout()
     }
+
+//    fun getArticle(): LiveData<PagingData<ListStoryItem>> {
+//        return Pager(
+//            config = PagingConfig(
+//                pageSize = 5
+//            ),
+//            pagingSourceFactory = {
+//                StoryPagingSource(apiService)
+//            }
+//        ).liveData
+//    }
 
     companion object {
         @Volatile

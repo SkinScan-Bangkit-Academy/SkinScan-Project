@@ -25,22 +25,11 @@
             android:exported="false"
             android:theme="@style/Theme.SkinScan" />
         <activity
-            android:name=".history.HistoryActivity"
-            android:exported="false" />
-        <activity
             android:name=".article.DetailArticleActivity"
-            android:exported="false" />
-        <activity
-            android:name=".article.ArticleActivity"
             android:exported="false" />
         <activity
             android:name=".view.scan.DetailScanActivity"
             android:exported="false" />
-        <activity
-            android:name=".view.camera.CameraActivity"
-            android:exported="false"
-            android:label="@string/title_activity_camera"
-            android:theme="@style/Theme.SkinScan" />
         <activity
             android:name=".view.onboarding.OnBoarding"
             android:exported="false" />
@@ -60,9 +49,6 @@
             android:name=".view.login.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".view.main.HomeActivity"
-            android:exported="false" />
-        <activity
             android:name=".fragment.HomeFragment"
             android:exported="false" />
         <activity
@@ -70,9 +56,6 @@
             android:exported="false" />
         <activity
             android:name=".fragment.CameraFragment"
-            android:exported="false" />
-        <activity
-            android:name=".fragment.HistoryFragment"
             android:exported="false" />
         <activity
             android:name=".fragment.profile.ProfileFragment"

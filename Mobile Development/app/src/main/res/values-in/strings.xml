@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Skin Scan</string>
+    <string name="first_fragment_label">Fragmen Pertama</string>
+    <string name="second_fragment_label">Fragmen Kedua</string>
+    <string name="next">Berikutnya</string>
+    <string name="previous">Sebelumnya</string>
+    <string name="search_text">Mencari obat?</string>
+    <string name="hi">Hai, %s</string>
+    <string name="desc_name">Mari Selesaikan Masalah Penyakit Anda!</string>
+    <string name="title_type">Jenis Penyakit Kulit Umum</string>
+    <string name="home">Beranda</string>
+    <string name="article">Artikel</string>
+    <string name="history">Riwayat</string>
+    <string name="profile">Profil</string>
+    <string name="hint_pw">Masukkan Kata Sandi Anda</string>
+    <string name="hint_gmail">Masukkan Email Anda</string>
+    <string name="hint_username">Masukkan Nama Pengguna Anda</string>
+    <string name="btn_login">Masuk</string>
+    <string name="desc_setting">Pengaturan</string>
+    <string name="Home_logo">logo</string>
+    <string name="home_img">img_dokter</string>
+    <string name="ic_home">ic_home</string>
+    <string name="ic_articleHome">ic_articlehome</string>
+    <string name="bg_cam">bg_cam</string>
+    <string name="ic_cam">ic_cam</string>
+    <string name="SignIn">Masuk</string>
+    <string name="txt_decisionLog">Atau Masuk Dengan</string>
+    <string name="txt_decisionReg">Atau Daftar Dengan</string>
+    <string name="desc_login">Belum punya Akun?</string>
+    <string name="desc_regis">Sudah punya Akun?</string>
+    <string name="SignUp">Daftar</string>
+    <string name="desc_splashScreen">Buat Kulit Anda Sehat dan Bersinar</string>
+    <string name="img_detail">img_detail</string>
+    <string name="Analyze">Pindai Ini!</string>
+    <string name="result_of_scan">Hasil</string>
+    <string name="diagnosed">Didiagnosis</string>
+    <string name="drug_recommendation">Rekomendasi Obat</string>
+    <string name="disease_prevention">Pencegahan Penyakit</string>
+    <string name="bg_rv">bg_rv</string>
+    <string name="desc_diagnosed">Ini adalah jinak dan biasanya tidak membutuhkan pengobatan. Jarang, mereka dapat berkembang menjadi melanoma. Sebagian besar melanoma dimulai pada kulit normal.</string>
+    <string name="desc_prevention">Sebagian besar nevus melanositik tidak memerlukan pengobatan. Nevus yang jinak tetapi mengganggu pasien karena penampilan atau iritasi dapat diangkat. Tahi lalat diangkat menggunakan teknik pencukuran atau operasi jahitan.</string>
+    <string name="desc_drugRecommend">Semua tahi lalat memiliki risiko sangat kecil untuk berkembang menjadi melanoma, jenis kanker kulit. Perkembangan melanoma pada nevus melanositik kongenital sangat jarang.</string>
+    <string name="word1">Apakah Anda punya masalah dengan kulit Anda?</string>
+    <string name="word2">Tidak tahu bagaimana menemukan kulit Anda</string>
+    <string name="word3">Ada Solusi</string>
+    <string name="word4">Masalah?</string>
+    <string name="word5">Untuk menyelesaikan masalah ini?</string>
+    <string name="desc_onboarding2">Solusi terbaik adalah menggunakan aplikasi SkinScan, yang mengidentifikasi masalah kulit dan menawarkan rekomendasi perawatan yang dipersonalisasi.</string>
+    <string name="descSlide_2">Solusi terbaik adalah menggunakan aplikasi SkinScan, yang mengidentifikasi masalah kulit dan menawarkan rekomendasi perawatan yang dipersonalisasi.</string>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="label">%s</string>
+    <string name="title_article">Mari Baca Artikel!</string>
+    <string name="img_article">img_artikel</string>
+    <string name="invalid_email">Format salah</string>
+    <string name="invalid_data">Silakan lengkapi bidang ini.</string>
+    <string name="invalid_pass">Silakan masukkan kata sandi dengan setidaknya 8 karakter.</string>
+    <string name="hello_blank_fragment">Halo fragmen kosong</string>
+    <string name="capture_image">ambil_gambar</string>
+    <string name="switch_camera">ganti_kamera</string>
+    <string name="camera">Pindai</string>
+    <string name="permissions_not_granted">Izin tidak diberikan oleh pengguna.</string>
+    <string name="camera_unavailable">Peluncuran kamera gagal.</string>
+    <string name="failed_to_take_a_picture">Gagal mengambil foto.</string>
+    <string name="login_success">masuk berhasil!</string>
+    <string name="new_account">Akun Anda telah berhasil didaftarkan.</string>
+    <string name="new_account_failed">Ada masalah dalam membuat akun Anda. Silakan coba lagi.</string>
+    <string name="details_unavailable">Detail tidak tersedia</string>
+    <string name="drug_recommend_unavailable">Tidak ada rekomendasi obat yang dapat diberikan saat ini.</string>
+    <string name="preventive_unavailable">Sayangnya, kami tidak dapat memberikan rekomendasi khusus untuk mencegah penyakit ini.</string>
+    <string name="dermatitis_details">Dermatitis atopik adalah penyakit kulit kronis yang menyebabkan peradangan, gatal, dan kemerahan pada kulit. Ini sering muncul pada anak-anak dan dapat berlanjut hingga dewasa.</string>
+    <string name="dermatitis_drug">Krim pelembab seperti Aquaphor, CeraVe, dan Eucerin. Krim hidrokortison 1% dapat digunakan untuk mengurangi peradangan dan gatal.</string>
+    <string name="dermatitis_prevention">Menghindari pemicu seperti sabun keras, deterjen, dan bahan pakaian yang mengiritasi. Menjaga kulit tetap lembab dengan menggunakan pelembab setelah mandi. Menghindari mandi air panas yang dapat mengeringkan kulit.</string>
+    <string name="eksim_details">Eksim adalah kondisi yang menyebabkan kulit menjadi merah, gatal, dan meradang. Ini dapat disebabkan oleh alergi, iritan, atau genetik.</string>
+    <string name="eksim_drug">Krim pelembab yang kaya akan emolien seperti Aveeno dan Cetaphil. Krim hidrokortison untuk meredakan gatal dan peradangan.</string>
+    <string name="eksim_prevention">Menggunakan sabun yang lembut dan bebas pewangi. Menghindari kontak dengan iritan seperti deterjen dan bahan kimia. Menjaga kulit tetap lembab dengan lotion.</string>
+    <string name="infeksi_jamur_details">Infeksi jamur dapat terjadi di berbagai bagian tubuh seperti kaki (kaki atlet), selangkangan (gatal selangkangan), atau kulit kepala (kurap). Ditandai dengan gatal, kemerahan, dan kulit bersisik.</string>
+    <string name="infeksi_jamur_drug">Krim antijamur seperti clotrimazole (Canesten) atau miconazole (Daktarin). Bedak antijamur juga dapat digunakan untuk menjaga area tetap kering.</string>
+    <string name="infeksi_jamur_prevention">Menjaga area yang rentan terhadap jamur tetap bersih dan kering. Segera mengganti pakaian yang basah atau berkeringat. Menghindari berbagi barang pribadi seperti handuk atau sepatu.</string>
+    <string name="infeksi_virus_details">Infeksi virus pada kulit termasuk herpes simpleks, cacar air, dan moluskum kontagiosum. Ditandai dengan ruam atau lesi yang bisa menyakitkan atau gatal.</string>
+    <string name="infeksi_virus_drug">Antiseptik topikal untuk mencegah infeksi sekunder. Obat antivirus topikal atau oral mungkin diperlukan dan memerlukan resep.</string>
+    <string name="infeksi_virus_prevention">Vaksinasi untuk penyakit yang dapat dicegah seperti cacar air dan HPV. Menghindari kontak langsung dengan lesi atau ruam orang lain. Mempraktikkan kebersihan tangan yang baik.</string>
+    <string name="karsinoma_details">Karsinoma sel basal adalah jenis kanker kulit yang paling umum dan biasanya tumbuh perlahan. Sering muncul sebagai benjolan kecil berwarna daging atau bercak merah yang tidak sembuh-sembuh.</string>
+    <string name="karsinoma_drug">Tidak ada obat bebas yang efektif; perawatan medis diperlukan seperti eksisi bedah, krioterapi, atau terapi fotodinamik.</string>
+    <string name="karsinoma_prevention">Menggunakan tabir surya dengan SPF tinggi setiap hari, mengenakan pakaian pelindung, dan menghindari paparan sinar matahari berlebihan terutama selama jam puncak.</string>
+    <string name="kutil_details">Kutil adalah pertumbuhan kulit yang disebabkan oleh human papillomavirus (HPV). Mereka muncul sebagai benjolan kecil dan keras, biasanya di tangan atau kaki.</string>
+    <string name="kutil_drug">Produk yang mengandung asam salisilat seperti Compound W dan plester penghilang kutil dapat digunakan untuk menghilangkan kutil.</string>
+    <string name="kutil_prevention">Menghindari kontak langsung dengan kutil orang lain. Menjaga kebersihan tangan yang baik dan mengenakan alas kaki di kamar mandi umum atau kolam renang.</string>
+    <string name="melanoma_details">Melanoma adalah jenis kanker kulit yang paling berbahaya, berkembang di melanosit yang menghasilkan melanin. Sering muncul sebagai tahi lalat baru atau perubahan pada tahi lalat yang ada.</string>
+    <string name="melanoma_drug">Tidak ada obat bebas; diagnosis dan perawatan oleh dokter diperlukan. Perawatan</string>
+    <string name="melanoma_prevention">Menggunakan tabir surya dengan SPF tinggi, mengenakan pakaian pelindung, dan secara teratur memeriksa kulit untuk perubahan pada tahi lalat.</string>
+    <string name="Psoriasis_details">Psoriasis adalah penyakit autoimun yang menyebabkan penumpukan sel kulit yang cepat, membentuk sisik dan bercak merah yang gatal dan mungkin menyakitkan.</string>
+    <string name="proriasis_drug">Krim pelembab, krim kortikosteroid seperti hidrokortison, dan produk yang mengandung asam salisilat atau tar batubara.</string>
+    <string name="psoriasis_prevention">Menghindari pemicu seperti stres, infeksi, dan cedera kulit. Menggunakan pelembab secara teratur untuk menjaga kulit tetap terhidrasi.</string>
+    <string name="tahi_lalat_details">Tahi lalat (Tahi lalat) adalah pertumbuhan kulit kecil dan gelap yang disebabkan oleh kelompok melanosit. Mereka biasanya tidak berbahaya.</string>
+    <string name="tahi_lalat_drug">Tidak diperlukan obat bebas kecuali terjadi perubahan yang mencurigakan; evaluasi oleh dokter diperlukan untuk memastikan tahi lalat jinak.</string>
+    <string name="tahi_lalat_prevention">Menghindari paparan sinar matahari yang berlebihan dan menggunakan tabir surya untuk melindungi kulit dari kerusakan UV.</string>
+    <string name="tumor_jinak_details">Tumor jinak (Tumor jinak) adalah pertumbuhan non-kanker yang tidak menyebar ke bagian tubuh lain dan biasanya tidak berbahaya.</string>
+    <string name="tumor_jinak_drug">Tidak ada obat bebas; diagnosis dan evaluasi oleh dokter diperlukan untuk memastikan tumor jinak.</string>
+    <string name="tumor_jinak_prevention">Menghindari paparan sinar matahari yang berlebihan dan menggunakan tabir surya untuk melindungi kulit. Menjaga kesehatan kulit secara keseluruhan dengan perawatan yang tepat.</string>
+    <string name="photoprofile">fotoProfil</string>
+    <string name="edit_profile">Edit Profil</string>
+    <string name="information_account">Informasi Akun</string>
+    <string name="change_password">Ganti Kata Sandi</string>
+    <string name="language">Bahasa</string>
+    <string name="term_and_condition">Syarat dan Ketentuan</string>
+    <string name="privacy_and_police">Privasi dan Kebijakan</string>
+    <string name="rating_this_app">Beri Nilai Aplikasi Ini</string>
+    <string name="log_out">Keluar</string>
+
+
+</resources>
