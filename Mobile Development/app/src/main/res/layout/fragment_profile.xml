@@ -5,10 +5,220 @@
     android:layout_height="match_parent"
     tools:context=".fragment.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/bgText"
+        android:layout_width="415dp"
+        android:layout_height="90dp"
+        android:background="@drawable/bgprofile">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="@string/profile"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/thirdColor"
+            android:textSize="25sp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bg_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logoo"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true"
+        android:contentDescription="@string/photoprofile" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="140dp"
+        tools:text="@tools:sample/full_names"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/secondaryColor"
+        android:textSize="17sp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/gmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="160dp"
+        android:alpha="0.7"
+        tools:text="example@gmail.com"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/secondaryColor">
+
+    </TextView>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/edit_profile"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="250dp">
+
+        <View
+            android:layout_width="410dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/secondaryColor"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:text="@string/information_account"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:layout_width="412dp"
+            android:layout_height="40dp"
+            android:alpha="0.2"
+            android:background="@drawable/rectangle"
+            android:backgroundTint="@color/thirdColor"/>
+        <ImageButton
+            android:layout_width="412dp"
+            android:layout_height="40dp"
+            android:alpha="0.2"
+            android:background="@drawable/rectangle"/>
+        <ImageButton
+            android:layout_width="412dp"
+            android:layout_height="40dp"
+            android:alpha="0.2"
+            android:background="@drawable/rectangle"/>
+        <ImageButton
+            android:layout_width="412dp"
+            android:layout_height="40dp"
+            android:alpha="0.2"
+            android:background="@drawable/rectangle"/>
+        <ImageButton
+            android:layout_width="412dp"
+            android:layout_height="40dp"
+            android:alpha="0.2"
+            android:background="@drawable/rectangle"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/log_out"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="325dp"
+        android:layout_marginStart="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_password"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="17sp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/language"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="17sp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/term_and_condition"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="17sp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/privacy_and_police"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="17sp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/rating_this_app"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="17sp">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="330dp"
+        android:layout_marginStart="350dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/arrow"
+            android:rotation="90">
+        </ImageView>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/arrow"
+            android:rotation="90">
+        </ImageView>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/arrow"
+            android:rotation="90">
+        </ImageView>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/arrow"
+            android:rotation="90">
+        </ImageView>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/arrow"
+            android:rotation="90">
+        </ImageView>
+
+    </LinearLayout>
+
+
+
 
 </FrameLayout>
