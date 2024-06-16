@@ -7,7 +7,7 @@ import com.bangkit.skinscan.R
 import com.bangkit.skinscan.fragment.ArticleFragment
 import com.bangkit.skinscan.fragment.CameraFragment
 import com.bangkit.skinscan.fragment.HomeFragment
-import com.bangkit.skinscan.fragment.ProfileFragment
+import com.bangkit.skinscan.fragment.profile.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
