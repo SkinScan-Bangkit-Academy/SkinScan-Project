@@ -45,7 +45,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun btnRegister() {
-        binding.btnLogin.setOnClickListener {
+        binding.btnRegister.setOnClickListener {
             val name = binding.etUsername.text.toString().trim()
             val email = binding.etEmail.text.toString().trim()
             val password = binding.etPw.text.toString().trim()

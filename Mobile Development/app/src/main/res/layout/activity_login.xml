@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -25,15 +24,16 @@
             android:textSize="26sp"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/RoundedTextInputLayout"
             android:layout_width="330dp"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp">
 
             <com.bangkit.skinscan.view.customview.EditTextEmailCustom
                 android:id="@+id/et_email"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
                 android:hint="@string/hint_gmail"
                 android:paddingStart="20dp"
@@ -41,14 +41,14 @@
                 android:inputType="textEmailAddress"
                 android:paddingEnd="20dp"
                 android:textSize="15sp"
-
-                android:background="@drawable/edittext_shape"/>
+                android:background="@null" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/RoundedTextInputLayout"
             android:layout_width="330dp"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
             app:endIconMode="password_toggle">
@@ -56,8 +56,8 @@
             <com.bangkit.skinscan.view.customview.EditTextPasswordCustom
                 android:id="@+id/et_pw"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/edittext_shape"
+                android:layout_height="wrap_content"
+                android:background="@null"
                 android:hint="@string/hint_pw"
                 android:textSize="15sp"
                 android:inputType="textPassword"
@@ -65,7 +65,6 @@
                 android:paddingEnd="20dp"
                 android:fontFamily="@font/roboto_regular" />
         </com.google.android.material.textfield.TextInputLayout>
-
 
     </LinearLayout>
 
@@ -83,51 +82,10 @@
         android:textSize="20sp" />
 
     <LinearLayout
-        android:id="@+id/line_signin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_login"
-        android:layout_marginTop="10dp">
-
-        <View
-            android:layout_width="120dp"
-            android:layout_height="1dp"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="9dp"
-            android:background="@color/secondaryColor"
-            android:visibility="visible" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:fontFamily="@font/roboto_bold"
-            android:text="@string/txt_decisionLog" />
-
-        <View
-            android:layout_width="122dp"
-            android:layout_height="1dp"
-            android:layout_marginStart="3dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/secondaryColor"
-            android:visibility="visible" />
-    </LinearLayout>
-
-
-        <ImageView
-            android:id="@+id/ic_google"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_below="@id/line_signin"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/bg_google"
-            android:src="@drawable/ic_google" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ic_google"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:orientation="horizontal">
 
@@ -153,7 +111,5 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="250dp"
         android:layout_centerHorizontal="true"/>
-
-
 
 </RelativeLayout>
