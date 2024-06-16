@@ -49,7 +49,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="330dp"
             android:layout_height="60dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_gravity="center"
             app:endIconMode="password_toggle">
 

@@ -1,17 +1,21 @@
 package com.bangkit.skinscan.fragment
 
+import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.provider.MediaStore
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowInsets
 import android.view.WindowManager
+import android.widget.ImageView
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageCapture
@@ -33,6 +37,7 @@ class CameraFragment : Fragment() {
 
     private var cameraSelector: CameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
     private var imageCapture: ImageCapture? = null
+    private var flashMode = ImageCapture.FLASH_MODE_OFF
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -52,6 +57,11 @@ class CameraFragment : Fragment() {
         }
         switchCamera()
         binding.captureImage.setOnClickListener { takePhoto() }
+        binding.libraryImage.setOnClickListener { openGallery() }
+        binding.flash.setOnClickListener {
+            toggleFlashMode()
+            updateFlashButtonIcon(binding.flash)
+        }
     }
 
     @Deprecated("Deprecated in Java")
@@ -91,7 +101,9 @@ class CameraFragment : Fragment() {
                 .also {
                     it.setSurfaceProvider(binding.viewFinder.surfaceProvider)
                 }
-            imageCapture = ImageCapture.Builder().build()
+            imageCapture = ImageCapture.Builder()
+                .setFlashMode(flashMode)
+                .build()
             try {
                 cameraProvider.unbindAll()
                 cameraProvider.bindToLifecycle(
@@ -159,6 +171,42 @@ class CameraFragment : Fragment() {
         (requireActivity() as AppCompatActivity).supportActionBar?.hide()
     }
 
+    private fun openGallery() {
+        val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+        intent.type = "image/*"
+        galleryLauncher.launch(intent)
+    }
+
+    private val galleryLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+        if (result.resultCode == AppCompatActivity.RESULT_OK) {
+            val selectedImageUri: Uri? = result.data?.data
+            if (selectedImageUri != null) {
+
+                // Send image URI to DetailActivity
+                val intent = Intent(requireContext(), DetailScanActivity::class.java).apply {
+                    putExtra(DetailScanActivity.EXTRA_IMAGE_URI, selectedImageUri.toString())
+                }
+                startActivity(intent)
+            }
+        }
+    }
+    private fun toggleFlashMode(){
+        flashMode = when(flashMode){
+            ImageCapture.FLASH_MODE_ON -> ImageCapture.FLASH_MODE_OFF
+            else -> ImageCapture.FLASH_MODE_ON
+        }
+        imageCapture?.flashMode = flashMode
+        startCamera()
+    }
+
+    private fun updateFlashButtonIcon(image: ImageView){
+        val iconRes = when(flashMode){
+            ImageCapture.FLASH_MODE_ON -> R.drawable.flashlight
+            else -> R.drawable.flashlight
+        }
+        image.setImageResource(iconRes)
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
@@ -167,6 +215,6 @@ class CameraFragment : Fragment() {
     companion object {
         private const val TAG = "Camera Fragment"
         private const val REQUEST_CODE_PERMISSIONS = 1
-        private val REQUIRED_PERMISSIONS = arrayOf(android.Manifest.permission.CAMERA)
+        private val REQUIRED_PERMISSIONS = arrayOf(Manifest.permission.CAMERA)
     }
 }

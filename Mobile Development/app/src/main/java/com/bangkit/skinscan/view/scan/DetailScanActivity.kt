@@ -6,15 +6,18 @@ import androidx.activity.enableEdgeToEdge
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
 import android.util.Log
 import com.bangkit.skinscan.R
 import com.bangkit.skinscan.data.DiseaseData
 import com.bangkit.skinscan.data.Labels
 import com.bangkit.skinscan.databinding.ActivityDetailScanBinding
 import com.bangkit.skinscan.ml.Model
+import com.bumptech.glide.Glide
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.io.File
+import java.io.IOException
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 
@@ -28,27 +31,30 @@ class DetailScanActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val imageUri = Uri.parse(intent.getStringExtra(EXTRA_IMAGE_URI))
-        imageUri?.let {
-            Log.d("Image URI", "showImage: $it")
-            val imageFile = File(it.path!!)
-            val bitmap = BitmapFactory.decodeFile(imageFile.absolutePath)
-            binding.imgView.setImageBitmap(bitmap)
 
-            val resizedBitmap = Bitmap.createScaledBitmap(bitmap, 150, 150, true)
-            val label = classifyImage(resizedBitmap)
-            binding.label.text = label
+        if (imageUri != null) {
+            Glide.with(this).load(imageUri).into(binding.imgView)
+            try {
+                val bitmap = MediaStore.Images.Media.getBitmap(this.contentResolver, imageUri)
+                val resizedBitmap = Bitmap.createScaledBitmap(bitmap, 150, 150, true)
+                val label = classifyImage(resizedBitmap)
+                binding.label.text = label
 
-            val diseaseInfoMap = DiseaseData.getDiseaseInfoMap(this)
-            val diseaseInfo = diseaseInfoMap[label]
+                val diseaseInfoMap = DiseaseData.getDiseaseInfoMap(this)
+                val diseaseInfo = diseaseInfoMap[label]
 
-            if (diseaseInfo != null){
-                binding.diseaseExpTv.text = diseaseInfo["explanation"] //pengertian penyakit
-                binding.drugRecTv.text = diseaseInfo["recommendation"] //rekomendasi obat
-                binding.diseasePrevTv.text = diseaseInfo["prevention"] //pencegahan penyakit
-            } else {
-                binding.diseaseExpTv.text = getString(R.string.details_unavailable)
-                binding.drugRecTv.text = getString(R.string.drug_recommend_unavailable)
-                binding.diseasePrevTv.text = getString(R.string.preventive_unavailable)
+                if (diseaseInfo != null){
+                    binding.diseaseExpTv.text = diseaseInfo["explanation"] //pengertian penyakit
+                    binding.drugRecTv.text = diseaseInfo["recommendation"] //rekomendasi obat
+                    binding.diseasePrevTv.text = diseaseInfo["prevention"] //pencegahan penyakit
+                } else {
+                    binding.diseaseExpTv.text = getString(R.string.details_unavailable)
+                    binding.drugRecTv.text = getString(R.string.drug_recommend_unavailable)
+                    binding.diseasePrevTv.text = getString(R.string.preventive_unavailable)
+                }
+
+            } catch (e: IOException) {
+                e.printStackTrace()
             }
         }
     }

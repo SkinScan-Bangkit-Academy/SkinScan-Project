@@ -67,20 +67,20 @@ class LoginActivity : AppCompatActivity() {
             }
 
             loginViewModel.loginResult.observe(this) { result ->
-                    // Login successful, save session
-                    showToast(getString(R.string.login_success))
-                    lifecycleScope.launch {
-                        saveSession(
-                            UserModel(
-                                result.userCredential.tokenResponse.idToken,
-                                result.userCredential.user.email,
-                                true
-                            )
+                // Login successful, save session
+                showToast(getString(R.string.login_success))
+                lifecycleScope.launch {
+                    saveSession(
+                        UserModel(
+                            result.userCredential.tokenResponse.idToken,
+                            result.userCredential.user.email,
+                            true
                         )
-                    }
+                    )
                 }
             }
         }
+    }
 
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
