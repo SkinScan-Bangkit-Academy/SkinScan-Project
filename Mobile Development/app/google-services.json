@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "114146627845",
+    "project_id": "skin-scan-335af",
+    "storage_bucket": "skin-scan-335af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114146627845:android:e4dc0677e8370fbedb276c",
+        "android_client_info": {
+          "package_name": "com.bangkit.skinscan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114146627845-ofgaevj1lnmvaat8nqc96mp664oacgcj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bangkit.skinscan",
+            "certificate_hash": "38ce033f111423d2958971e97bac5dc7471b1a1b"
+          }
+        },
+        {
+          "client_id": "114146627845-2vef1aulie6l2gfucqjspdp7hiif7akt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHKq2Bl14_HeSqaEdRJcXyidjouFlMKQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114146627845-2vef1aulie6l2gfucqjspdp7hiif7akt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
