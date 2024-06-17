@@ -21,6 +21,9 @@
         android:theme="@style/Theme.SkinScan"
         tools:targetApi="31">
         <activity
+            android:name=".fragment.profile.RatingApp"
+            android:exported="false" />
+        <activity
             android:name=".view.main.diseasehome.DetailItemHomeActivity"
             android:exported="false" />
         <activity

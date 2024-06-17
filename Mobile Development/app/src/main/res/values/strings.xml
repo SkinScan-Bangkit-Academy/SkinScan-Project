@@ -143,9 +143,10 @@
     <string name="log_out">Log Out</string>
     <string name="enter_your_password">Enter Your Password</string>
     <string name="about_desease">About Desease</string>
+    <string name="submit">Submit</string>
     <string name="tv_reset_password">Reset Password</string>
     <string name="reset_btn">Continue</string>
-    <string name="title_dialog_reset_password">Reset password?</string>
+    <string name="title_dialog_reset_password">Reset Password?</string>
     <string name="message_dialog_reset">Please check your email to reset your password.</string>
     <string name="ok">OK</string>
 </resources>
