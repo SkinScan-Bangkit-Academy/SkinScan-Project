@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import com.bangkit.skinscan.R
 import com.bangkit.skinscan.fragment.ArticleFragment
 import com.bangkit.skinscan.fragment.CameraFragment
-import com.bangkit.skinscan.fragment.HomeFragment
+import com.bangkit.skinscan.fragment.home.HomeFragment
 import com.bangkit.skinscan.fragment.profile.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 

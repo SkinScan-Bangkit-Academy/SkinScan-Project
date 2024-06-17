@@ -1,4 +1,4 @@
-package com.bangkit.skinscan.view.main
+package com.bangkit.skinscan.view.main.diseasehome
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

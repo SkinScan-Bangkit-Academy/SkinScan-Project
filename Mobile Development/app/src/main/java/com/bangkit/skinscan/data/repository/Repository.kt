@@ -7,6 +7,7 @@ import androidx.paging.PagingData
 import com.bangkit.skinscan.data.preference.UserModel
 import com.bangkit.skinscan.data.preference.UserPreference
 import com.bangkit.skinscan.data.remote.ApiService
+import com.bangkit.skinscan.data.remote.request.DeleteAccountRequest
 import com.bangkit.skinscan.data.remote.request.LoginRequest
 import com.bangkit.skinscan.data.remote.request.RegisterRequest
 import com.bangkit.skinscan.data.remote.response.LoginResponse
@@ -36,6 +37,10 @@ class Repository private constructor(
 
     suspend fun logout(){
         userPreference.logout()
+    }
+
+    suspend fun deleteAccount(request: DeleteAccountRequest): RegisterResponse {
+        return apiService.deleteAccount(request)
     }
 
 //    fun getArticle(): LiveData<PagingData<ListStoryItem>> {

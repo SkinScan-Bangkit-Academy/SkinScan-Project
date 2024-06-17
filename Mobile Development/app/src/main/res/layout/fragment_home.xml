@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.HomeFragment">
+    tools:context=".fragment.home.HomeFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -127,6 +127,7 @@
                 android:contentDescription="@string/bg_rv" />
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_home"
                 android:layout_width="350dp"
                 android:layout_height="600dp"
                 android:layout_below="@id/title"
