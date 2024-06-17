@@ -91,6 +91,7 @@
             android:textSize="20sp"/>
 
         <Button
+            android:id="@+id/delete"
             android:layout_width="405dp"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"

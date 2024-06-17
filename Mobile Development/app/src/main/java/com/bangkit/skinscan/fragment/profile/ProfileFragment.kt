@@ -11,6 +11,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.bangkit.skinscan.R
 import com.bangkit.skinscan.databinding.FragmentProfileBinding
+import com.bangkit.skinscan.fragment.profile.deleteaccount.DeleteAccount
 import com.bangkit.skinscan.view.ViewModelFactory
 import com.bangkit.skinscan.view.login.LoginActivity
 import com.bangkit.skinscan.view.main.MainActivity
@@ -36,6 +37,10 @@ class ProfileFragment : Fragment() {
         binding.logoutBtn.setOnClickListener { logoutBtn() }
         binding.Languange.setOnClickListener {
             startActivity(Intent(Settings.ACTION_LOCALE_SETTINGS))
+        }
+        binding.delete.setOnClickListener {
+            val intent = Intent(requireContext(), DeleteAccount::class.java)
+            startActivity(intent)
         }
     }
 
