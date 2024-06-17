@@ -113,14 +113,9 @@
             android:backgroundTint="@color/thirdColor"
             android:stateListAnimator="@animator/animatoreffect"
             android:alpha="0.2" />
+
         <Button
-            android:layout_width="405dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/thirdColor"
-            android:stateListAnimator="@animator/animatoreffect"
-            android:alpha="0.2" />
-        <Button
+            android:id="@+id/ratingBar"
             android:layout_width="405dp"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
@@ -167,14 +162,7 @@
             android:fontFamily="@font/roboto_regular"
             android:textSize="17sp">
         </TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:text="@string/privacy_and_police"
-            android:fontFamily="@font/roboto_regular"
-            android:textSize="17sp">
-        </TextView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -220,13 +208,7 @@
             android:src="@drawable/arrow"
             android:rotation="90">
         </ImageView>
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/arrow"
-            android:rotation="90">
-        </ImageView>
+
 
     </LinearLayout>
 
