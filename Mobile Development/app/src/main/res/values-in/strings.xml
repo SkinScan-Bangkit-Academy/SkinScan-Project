@@ -142,6 +142,10 @@
     <string name="privacy_and_police">Privasi dan Kebijakan</string>
     <string name="rating_this_app">Beri Nilai Aplikasi Ini</string>
     <string name="log_out">Keluar</string>
+    <string name="delete_account">Hapus Akun</string>
+    <string name="enter_your_password">Masukkan Kata Sandi Anda</string>
+    <string name="delete">Hapus</string>
+
 
 
 </resources>

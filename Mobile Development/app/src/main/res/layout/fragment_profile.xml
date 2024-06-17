@@ -146,7 +146,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/change_password"
+            android:text="@string/delete_account"
             android:fontFamily="@font/roboto_regular"
             android:textSize="17sp">
         </TextView>

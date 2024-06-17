@@ -142,7 +142,7 @@
     <string name="privacy_and_police">Privacy and Police</string>
     <string name="rating_this_app">Rating This App</string>
     <string name="log_out">Log Out</string>
-    <string name="enter_your_old_password">Enter Your Old Password</string>
-    <string name="enter_your_new_password">Enter Your New Password</string>
-    <string name="submit">Submit</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="delete">Delete</string>
 </resources>

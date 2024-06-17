@@ -21,7 +21,7 @@
         android:theme="@style/Theme.SkinScan"
         tools:targetApi="31">
         <activity
-            android:name=".fragment.profile.ChangePassword"
+            android:name=".fragment.profile.DeleteAccount"
             android:exported="false" />
         <activity
             android:name=".view.main.DetailHomeActivity"

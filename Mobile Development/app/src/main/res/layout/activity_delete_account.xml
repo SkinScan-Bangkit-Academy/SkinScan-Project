@@ -4,13 +4,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.login.LoginActivity">
+    tools:context=".fragment.profile.DeleteAccount">
 
     <LinearLayout
         android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="80dp"
         android:orientation="vertical"
         android:padding="20dp">
 
@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="140dp"
-            android:text="@string/change_password"
+            android:text="@string/delete_account"
             android:textColor="@color/primaryColor"
             android:fontFamily="@font/roboto_medium"
             android:textSize="26sp"/>
@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
-                android:hint="@string/enter_your_old_password"
+                android:hint="@string/hint_gmail"
                 android:paddingStart="20dp"
                 android:paddingHorizontal="20dp"
                 android:inputType="textEmailAddress"
@@ -60,7 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@null"
-                android:hint="@string/enter_your_new_password"
+                android:hint="@string/enter_your_password"
                 android:textSize="15sp"
                 android:inputType="textPassword"
                 android:paddingStart="20dp"
@@ -74,7 +74,7 @@
         android:id="@+id/btn_submit"
         android:layout_width="330dp"
         android:layout_height="55dp"
-        android:text="@string/submit"
+        android:text="@string/delete"
         android:layout_below="@id/layout"
         android:layout_centerHorizontal="true"
         android:background="@drawable/button_shape"
@@ -83,35 +83,14 @@
         android:fontFamily="@font/roboto_medium"
         android:textSize="20sp" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn_submit"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/desc_login"
-            android:fontFamily="@font/roboto_medium"/>
-        <TextView
-            android:id="@+id/goToSignUp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:text="@string/SignUp"
-            android:fontFamily="@font/roboto_italic"/>
-
-    </LinearLayout>
 
     <ProgressBar
         android:id="@+id/progress_bar"
         android:progressTint="@color/primaryColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="340dp"
         android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
