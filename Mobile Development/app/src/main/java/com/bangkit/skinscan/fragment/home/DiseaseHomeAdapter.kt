@@ -1,10 +1,12 @@
 package com.bangkit.skinscan.fragment.home
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bangkit.skinscan.data.Disease
 import com.bangkit.skinscan.databinding.ActivityDetailHomeBinding
+import com.bangkit.skinscan.view.main.diseasehome.DetailItemHomeActivity
 
 class DiseaseHomeAdapter(private val listDisease : ArrayList<Disease>): RecyclerView.Adapter<DiseaseHomeAdapter.ViewHolder>() {
     class ViewHolder(var binding: ActivityDetailHomeBinding): RecyclerView.ViewHolder(binding.root)
@@ -23,9 +25,9 @@ class DiseaseHomeAdapter(private val listDisease : ArrayList<Disease>): Recycler
         holder.binding.imageView.setImageResource(disease.img)
         holder.binding.textViewUsername.text = disease.name
         holder.binding.root.setOnClickListener {
-//            val intent = Intent(holder.binding.root.context, DetailItemHomeActivity::class.java)
-//            intent.putExtra(DetailItemHomeActivity.EXTRA_USER, disease)
-//            holder.binding.root.context.startActivity(intent, )
+            val intent = Intent(holder.binding.root.context, DetailItemHomeActivity::class.java)
+            intent.putExtra(DetailItemHomeActivity.EXTRA_USER, disease)
+            holder.binding.root.context.startActivity(intent)
         }
     }
 }
