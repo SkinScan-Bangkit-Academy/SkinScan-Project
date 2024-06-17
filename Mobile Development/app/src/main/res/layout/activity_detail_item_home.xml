@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/diagnosingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="24sp"
+        tools:text="@tools:sample/full_names" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/diagnosed"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="12dp">
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:src="@tools:sample/backgrounds/scenic"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/drug_Recoomend"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_shape"
+        android:padding="12dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="12dp">
+
+        <TextView
+            android:id="@+id/titleDrugRecommendationData"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/about_desease"
+            android:textColor="@color/thirdColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/drugRecTv"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginBottom="10dp"
+            android:text="@string/desc_drugRecommend"
+            android:textColor="@color/primaryColor"
+            android:textSize="15sp" />
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
