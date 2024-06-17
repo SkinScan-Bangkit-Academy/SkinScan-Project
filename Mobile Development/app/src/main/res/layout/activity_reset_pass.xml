@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.profile.deleteaccount.DeleteAccount">
+    tools:context=".fragment.profile.resetpass.ResetPassActivity">
 
     <LinearLayout
         android:id="@+id/layout"
@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="140dp"
-            android:text="@string/delete_account"
+            android:text="@string/tv_reset_password"
             android:textColor="@color/primaryColor"
             android:fontFamily="@font/roboto_medium"
             android:textSize="26sp"/>
@@ -70,10 +70,10 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_delete"
+        android:id="@+id/btn_reset"
         android:layout_width="330dp"
         android:layout_height="55dp"
-        android:text="@string/delete"
+        android:text="@string/reset_btn"
         android:layout_below="@id/layout"
         android:layout_centerHorizontal="true"
         android:background="@drawable/button_shape"

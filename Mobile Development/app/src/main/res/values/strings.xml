@@ -136,14 +136,16 @@
     <string name="photoprofile">photoProfile</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="information_account">Information Account</string>
-    <string name="change_password">Change Password</string>
     <string name="language">Language</string>
     <string name="term_and_condition">Term and Condition</string>
     <string name="privacy_and_police">Privacy and Police</string>
     <string name="rating_this_app">Rating This App</string>
     <string name="log_out">Log Out</string>
-    <string name="delete_account">Delete Account</string>
     <string name="enter_your_password">Enter Your Password</string>
-    <string name="delete">Delete</string>
     <string name="about_desease">About Desease</string>
+    <string name="tv_reset_password">Reset Password</string>
+    <string name="reset_btn">Continue</string>
+    <string name="title_dialog_reset_password">Reset password?</string>
+    <string name="message_dialog_reset">Please check your email to reset your password.</string>
+    <string name="ok">OK</string>
 </resources>

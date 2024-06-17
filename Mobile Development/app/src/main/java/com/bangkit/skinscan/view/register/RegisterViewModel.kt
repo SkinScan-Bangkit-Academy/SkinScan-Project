@@ -24,7 +24,7 @@ class RegisterViewModel(private var repository: Repository): ViewModel() {
                 val response = repository.register(request)
                 _registerResult.value = response
             } catch (e: Exception) {
-                Log.e(TAG, "Login failed: ${e.message}")
+                Log.e(TAG, "Register failed: ${e.message}")
             } finally {
                 _isLoading.value = false
             }

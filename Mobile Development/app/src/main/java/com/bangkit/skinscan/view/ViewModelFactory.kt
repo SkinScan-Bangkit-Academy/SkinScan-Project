@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.bangkit.skinscan.data.di.Injection
 import com.bangkit.skinscan.data.repository.Repository
-import com.bangkit.skinscan.fragment.profile.deleteaccount.DeleteAccountViewModel
+import com.bangkit.skinscan.fragment.profile.resetpass.ResetPassViewModel
 import com.bangkit.skinscan.fragment.profile.ProfileFragmentViewModel
 import com.bangkit.skinscan.view.login.LoginViewModel
 import com.bangkit.skinscan.view.splash.SplashViewModel
@@ -19,7 +19,7 @@ class ViewModelFactory(private val repository: Repository) : ViewModelProvider.N
             modelClass.isAssignableFrom(LoginViewModel::class.java) -> LoginViewModel(repository)
             modelClass.isAssignableFrom(SplashViewModel::class.java) -> SplashViewModel(repository)
             modelClass.isAssignableFrom(ProfileFragmentViewModel::class.java) -> ProfileFragmentViewModel(repository)
-            modelClass.isAssignableFrom(DeleteAccountViewModel::class.java) -> DeleteAccountViewModel(repository)
+            modelClass.isAssignableFrom(ResetPassViewModel::class.java) -> ResetPassViewModel(repository)
             else -> throw IllegalArgumentException("unknown ViewModel: ${modelClass.name}")
         }
         @Suppress("UNCHECKED_CAST")

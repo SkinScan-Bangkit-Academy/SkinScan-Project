@@ -1,6 +1,6 @@
 package com.bangkit.skinscan.data.remote
 
-import com.bangkit.skinscan.data.remote.request.DeleteAccountRequest
+import com.bangkit.skinscan.data.remote.request.ResetPassRequest
 import com.bangkit.skinscan.data.remote.request.LoginRequest
 import com.bangkit.skinscan.data.remote.request.RegisterRequest
 import com.bangkit.skinscan.data.remote.response.LoginResponse
@@ -20,7 +20,7 @@ interface ApiService {
     ): LoginResponse
 
     @POST("reset-password")
-    suspend fun deleteAccount(
-        @Body request: DeleteAccountRequest
+    suspend fun resetPass(
+        @Body request: ResetPassRequest
     ): RegisterResponse
 }

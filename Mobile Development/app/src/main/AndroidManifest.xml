@@ -24,7 +24,7 @@
             android:name=".view.main.diseasehome.DetailItemHomeActivity"
             android:exported="false" />
         <activity
-            android:name=".fragment.profile.deleteaccount.DeleteAccount"
+            android:name=".fragment.profile.resetpass.ResetPassActivity"
             android:exported="false" />
         <activity
             android:name=".view.main.diseasehome.DetailHomeActivity"

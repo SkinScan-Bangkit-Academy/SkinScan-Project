@@ -136,15 +136,18 @@
     <string name="photoprofile">fotoProfil</string>
     <string name="edit_profile">Edit Profil</string>
     <string name="information_account">Informasi Akun</string>
-    <string name="change_password">Ganti Kata Sandi</string>
     <string name="language">Bahasa</string>
     <string name="term_and_condition">Syarat dan Ketentuan</string>
     <string name="privacy_and_police">Privasi dan Kebijakan</string>
     <string name="rating_this_app">Beri Nilai Aplikasi Ini</string>
     <string name="log_out">Keluar</string>
-    <string name="delete_account">Hapus Akun</string>
     <string name="enter_your_password">Masukkan Kata Sandi Anda</string>
-    <string name="delete">Hapus</string>
+    <string name="about_desease">Tentang Penyakit</string>
+    <string name="tv_reset_password">Atur Ulang Kata Sandi</string>
+    <string name="reset_btn">Selanjutnys</string>
+    <string name="title_dialog_reset_password">Atur Ulang Kata Sandi??</string>
+    <string name="message_dialog_reset">Silahkan periksa email Anda untuk mengatur ulang kata sandi Anda.</string>
+    <string name="ok">OK</string>
 
 
 

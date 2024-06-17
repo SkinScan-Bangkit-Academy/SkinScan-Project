@@ -1,5 +1,5 @@
 package com.bangkit.skinscan.data.remote.request
 
-data class DeleteAccountRequest(
+data class ResetPassRequest(
     val email: String
 )

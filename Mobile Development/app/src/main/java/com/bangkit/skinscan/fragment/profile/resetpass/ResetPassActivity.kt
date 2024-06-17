@@ -1,29 +1,29 @@
-package com.bangkit.skinscan.fragment.profile.deleteaccount
+package com.bangkit.skinscan.fragment.profile.resetpass
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Toast
 import androidx.activity.viewModels
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import com.bangkit.skinscan.R
-import com.bangkit.skinscan.databinding.ActivityDeleteAccountBinding
+import com.bangkit.skinscan.databinding.ActivityResetPassBinding
 import com.bangkit.skinscan.view.ViewModelFactory
 import com.bangkit.skinscan.view.login.LoginActivity
 import kotlinx.coroutines.launch
 
-class DeleteAccount : AppCompatActivity() {
+class ResetPassActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityDeleteAccountBinding
-    private val deleteAccountViewModel by viewModels<DeleteAccountViewModel> { ViewModelFactory.getInstance(this) }
+    private lateinit var binding: ActivityResetPassBinding
+    private val resetPassViewModel by viewModels<ResetPassViewModel> { ViewModelFactory.getInstance(this) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDeleteAccountBinding.inflate(layoutInflater)
+        binding = ActivityResetPassBinding.inflate(layoutInflater)
         setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -33,23 +33,27 @@ class DeleteAccount : AppCompatActivity() {
 
         showLoading(false)
 
-        deleteAccountViewModel.isLoading.observe(this) {
+        resetPassViewModel.isLoading.observe(this) {
             showLoading(it)
         }
 
-        deleteAccountViewModel.deleteResult.observe(this) {
+        resetPassViewModel.resetResult.observe(this) {
             it?.let {
-                showToast("Your account has been deleted successfully")
-                Log.d(TAG, "btnDelete: ${it.message}")
-                navigateToLogin()
+                AlertDialog.Builder(this)
+                    .setTitle(getString(R.string.title_dialog_reset_password))
+                    .setMessage(getString(R.string.message_dialog_reset))
+                    .setPositiveButton(getString(R.string.ok)){ dialog, which ->
+                        navigateToLogin()
+                    }.show()
+                Log.d(TAG, "btnReset: ${it.message}")
             }
         }
 
-        btnDelete()
+        btnReset()
     }
 
-    private fun btnDelete() {
-        binding.btnDelete.setOnClickListener {
+    private fun btnReset() {
+        binding.btnReset.setOnClickListener {
             val email = binding.email.text.toString().trim()
             val password = binding.pass.text.toString().trim()
 
@@ -65,12 +69,8 @@ class DeleteAccount : AppCompatActivity() {
             binding.email.error = null
             binding.pass.error = null
 
-            deleteAccountViewModel.deleteAccount(email)
+            resetPassViewModel.resetPass(email)
         }
-    }
-
-    private fun showToast(message: String) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 
     private fun showLoading(isLoading: Boolean) {
@@ -79,8 +79,8 @@ class DeleteAccount : AppCompatActivity() {
 
     private fun navigateToLogin() {
         lifecycleScope.launch {
-            deleteAccountViewModel.logout()
-            val intent = Intent(this@DeleteAccount, LoginActivity::class.java).apply {
+            resetPassViewModel.logout()
+            val intent = Intent(this@ResetPassActivity, LoginActivity::class.java).apply {
                 flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
             }
             startActivity(intent)
@@ -88,6 +88,6 @@ class DeleteAccount : AppCompatActivity() {
     }
 
     companion object {
-        const val TAG = "DeleteAccountActivity"
+        const val TAG = "ResetPassActivity"
     }
 }
