@@ -130,6 +130,7 @@
                 android:id="@+id/rv_home"
                 android:layout_width="350dp"
                 android:layout_height="600dp"
+                android:layout_margin="20dp"
                 android:layout_below="@id/title"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp" />
