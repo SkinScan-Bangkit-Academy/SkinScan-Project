@@ -107,6 +107,7 @@
             android:stateListAnimator="@animator/animatoreffect"
             android:alpha="0.2" />
         <Button
+            android:id="@+id/termCondition"
             android:layout_width="405dp"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"

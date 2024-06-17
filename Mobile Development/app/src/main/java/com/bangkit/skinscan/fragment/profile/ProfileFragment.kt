@@ -50,6 +50,12 @@ class ProfileFragment : Fragment() {
             dialog.show()
         }
 
+        binding.termCondition.setOnClickListener {
+            val intent = Intent(requireContext(), TermAndCondition::class.java)
+            startActivity(intent)
+        }
+
+
         return binding.root
     }
 

@@ -148,6 +148,30 @@
     <string name="title_dialog_reset_password">Atur Ulang Kata Sandi??</string>
     <string name="message_dialog_reset">Silahkan periksa email Anda untuk mengatur ulang kata sandi Anda.</string>
     <string name="ok">OK</string>
+    <string name="submit">Kirim</string>
+    <string name="terms_and_conditions">Syarat dan Ketentuan</string>
+    <string name="introduction">Pengantar</string>
+    <string name="desc_intro">Selamat datang di SkinScan. Dengan mengunduh atau menggunakan Aplikasi, Anda menyetujui syarat-syarat ini. Harap baca dengan seksama sebelum menggunakan Aplikasi. Anda tidak diperbolehkan menyalin, mengubah, atau mencoba mengekstrak kode sumber Aplikasi, atau membuat versi turunannya.</string>
+    <string name="user_accounts">Akun Pengguna</string>
+    <string name="desc_userAcc">Untuk mengakses fitur-fitur tertentu dari Aplikasi, Anda mungkin perlu membuat akun. Anda setuju untuk memberikan informasi yang akurat dan lengkap saat membuat akun Anda. Anda bertanggung jawab untuk menjaga kerahasiaan akun dan kata sandi Anda serta untuk membatasi akses ke perangkat Anda.</string>
+    <string name="usage">Penggunaan</string>
+    <string name="desc_usage">Anda setuju untuk menggunakan Aplikasi hanya untuk tujuan yang sah. Anda setuju untuk tidak menggunakan Aplikasi dengan cara yang dapat membahayakan Aplikasi, pengguna lain, atau pihak ketiga. Aplikasi ini dirancang untuk membantu dalam mendeteksi kondisi kulit dan tidak dimaksudkan untuk menggantikan saran medis profesional, diagnosis, atau pengobatan.</string>
+    <string name="medical_disclaimer">Penafian Medis</string>
+    <string name="desc_medicalDisclaimer">Aplikasi ini menyediakan informasi berdasarkan analisis visual kondisi kulit. Namun, ini bukan pengganti saran medis profesional, diagnosis, atau pengobatan. Selalu cari saran dari dokter atau penyedia layanan kesehatan terkualifikasi lainnya jika Anda memiliki pertanyaan mengenai kondisi medis.</string>
+    <string name="limitation_of_liability">Batasan Tanggung Jawab</string>
+    <string name="desc_limitation">SkinScan dan pengembangnya tidak bertanggung jawab atas kerugian langsung, tidak langsung, insidental, khusus, atau konsekuensial, atau kerugian atas keuntungan, pendapatan, data, atau penggunaan, yang timbul oleh Anda atau pihak ketiga, yang timbul dari akses atau penggunaan Anda terhadap Aplikasi. Penggunaan Anda terhadap Aplikasi adalah risiko Anda sendiri.</string>
+    <string name="privacy_policy">Kebijakan Privasi</string>
+    <string name="desc_privacyPolice">Privasi Anda penting bagi kami. Aplikasi ini mengumpulkan, menyimpan, dan menggunakan data pribadi sesuai dengan Kebijakan Privasi kami. Dengan menggunakan Aplikasi, Anda menyetujui pengumpulan dan penggunaan informasi sesuai dengan kebijakan ini.</string>
+    <string name="fees_and_payments">Biaya dan Pembayaran</string>
+    <string name="desc_fee">Aplikasi ini dapat menawarkan fitur-fitur atau layanan tertentu dengan biaya. Jika Anda memilih untuk membeli fitur atau layanan apa pun, Anda setuju untuk membayar biaya dan pajak yang berlaku. Semua biaya tidak dapat dikembalikan kecuali sebagaimana diwajibkan oleh hukum.</string>
+    <string name="termination">Pengakhiran</string>
+    <string name="desc_termination">Kami dapat mengakhiri atau menangguhkan akses Anda ke Aplikasi segera, tanpa pemberitahuan atau tanggung jawab sebelumnya, atas alasan apa pun, termasuk tanpa batasan jika Anda melanggar Ketentuan.</string>
+    <string name="changes_to_this_agreement">Perubahan pada Perjanjian Ini</string>
+    <string name="desc_agreement">Kami berhak untuk memodifikasi atau mengganti Ketentuan ini kapan saja. Jika revisi tersebut bersifat material, kami akan mencoba memberikan pemberitahuan setidaknya 30 hari sebelum ketentuan baru tersebut berlaku. Penggunaan Anda yang terus menerus terhadap Aplikasi setelah perubahan tersebut berlaku akan menandakan penerimaan Anda terhadap ketentuan baru.</string>
+    <string name="governing_law">Hukum yang Mengatur</string>
+    <string name="desc_law">Ketentuan ini akan diatur dan diinterpretasikan sesuai dengan hukum Indonesia, tanpa memperhatikan ketentuan hukumnya.</string>
+    <string name="contact_us">Hubungi Kami</string>
+    <string name="desc_contact">Jika Anda memiliki pertanyaan tentang Ketentuan ini, silakan hubungi kami di Skinscan@gmail.com atau 082376253192.</string>
 
 
 
