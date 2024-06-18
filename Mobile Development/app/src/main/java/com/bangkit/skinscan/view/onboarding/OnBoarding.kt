@@ -33,25 +33,20 @@ class OnBoarding : AppCompatActivity() {
 
     private fun playAnimation() {
         val line1 =
-            ObjectAnimator.ofFloat(binding.onboardingword1, View.ALPHA, 1f).setDuration(1000)
+            ObjectAnimator.ofFloat(binding.onboardingword1, View.ALPHA, 1f).setDuration(3000)
         val line2 =
-            ObjectAnimator.ofFloat(binding.onboardingword2, View.ALPHA, 1f).setDuration(1000)
+            ObjectAnimator.ofFloat(binding.onboardingword2, View.ALPHA, 1f).setDuration(3000)
         val line3 =
-            ObjectAnimator.ofFloat(binding.onboardingword3, View.ALPHA, 1f).setDuration(1000)
+            ObjectAnimator.ofFloat(binding.onboardingword3, View.ALPHA, 1f).setDuration(3000)
         val line4 =
-            ObjectAnimator.ofFloat(binding.onboardingword4, View.ALPHA, 1f).setDuration(1000)
+            ObjectAnimator.ofFloat(binding.onboardingword4, View.ALPHA, 1f).setDuration(3000)
         val line5 =
-            ObjectAnimator.ofFloat(binding.onboardingword5, View.ALPHA, 1f).setDuration(1000)
+            ObjectAnimator.ofFloat(binding.onboardingword5, View.ALPHA, 1f).setDuration(3000)
 
         val together = AnimatorSet().apply {
-            playTogether(line3, line4)
-        }
-
-        sequentialAnimator = AnimatorSet().apply {
-            playSequentially(line1, line2, together, line5)
+            playTogether(line1, line2, line3, line4, line5)
             start()
         }
-
     }
 
 

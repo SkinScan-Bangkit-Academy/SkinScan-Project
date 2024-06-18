@@ -149,4 +149,27 @@
     <string name="title_dialog_reset_password">Reset Password?</string>
     <string name="message_dialog_reset">Please check your email to reset your password.</string>
     <string name="ok">OK</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="introduction">Introduction</string>
+    <string name="desc_intro">Welcome to SkinScan. By downloading or using the Application, you agree to these terms. Please read them carefully before using the Application. You are not allowed to copy, modify, or attempt to extract the source code of the Application, or make derivative versions of it.</string>
+    <string name="user_accounts">User Accounts</string>
+    <string name="desc_userAcc">To access certain features of the Application, you may need to create an account. You agree to provide accurate and complete information when creating your account. You are responsible for maintaining the confidentiality of your account and password and for restricting access to your device.</string>
+    <string name="usage">Usage</string>
+    <string name="desc_usage">You agree to use the Application only for lawful purposes. You agree not to use the Application in any way that may cause harm to the Application, other users, or third parties. The Application is designed to assist in the detection of skin conditions and is not intended to replace professional medical advice, diagnosis, or treatment.</string>
+    <string name="medical_disclaimer">Medical Disclaimer</string>
+    <string name="desc_medicalDisclaimer">The Application provides information based on visual analysis of skin conditions. However, it is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health providers with any questions you may have regarding a medical condition.</string>
+    <string name="limitation_of_liability">Limitation of Liability</string>
+    <string name="desc_limitation">SkinScan and its developers are not liable for any direct, indirect, incidental, special, or consequential damages, or damages for loss of profits, revenue, data, or use, incurred by you or any third party, arising from your access to or use of the Application. Your use of the Application is at your own risk.</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="desc_privacyPolice">Your privacy is important to us. The Application collects, stores, and uses personal data in accordance with our Privacy Policy. By using the Application, you consent to the collection and use of information in accordance with this policy.</string>
+    <string name="fees_and_payments">Fees and Payments</string>
+    <string name="desc_fee">The Application may offer certain features or services for a fee. If you choose to purchase any features or services, you agree to pay the applicable fees and taxes. All fees are non-refundable except as required by law.</string>
+    <string name="termination">Termination</string>
+    <string name="desc_termination">We may terminate or suspend your access to the Application immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</string>
+    <string name="changes_to_this_agreement">Changes to This Agreement</string>
+    <string name="desc_agreement">We reserve the right to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days\' notice before any new terms take effect. Your continued use of the Application after the changes become effective will signify your acceptance of the new terms.</string>
+    <string name="governing_law">Governing Law</string>
+    <string name="desc_law">These Terms shall be governed and construed in accordance with the Indonesian laws, without regard to its conflict of law provisions.</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="desc_contact">If you have any questions about these Terms, please contact us at Skinscan@gmail.com or 082376253192.</string>
 </resources>
