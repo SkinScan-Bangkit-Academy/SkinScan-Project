@@ -11,7 +11,7 @@ import com.bangkit.skinscan.view.main.MainActivity
 import com.bangkit.skinscan.view.onboarding.OnBoarding
 
 class SplashScreen : AppCompatActivity() {
-    private val SPLASH_TIME_OUT :Long = 3000
+    private val SPLASH_TIME_OUT :Long = 500
     private val splashViewModel by viewModels<SplashViewModel> { ViewModelFactory.getInstance(this) }
 
     override fun onCreate(savedInstanceState: Bundle?) {

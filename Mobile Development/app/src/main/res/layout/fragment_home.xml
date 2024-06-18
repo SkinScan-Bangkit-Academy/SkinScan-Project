@@ -10,7 +10,7 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/logoo"
+            android:src="@drawable/skinscan"
             android:contentDescription="@string/Home_logo" />
         <Button
             android:id="@+id/setting"
