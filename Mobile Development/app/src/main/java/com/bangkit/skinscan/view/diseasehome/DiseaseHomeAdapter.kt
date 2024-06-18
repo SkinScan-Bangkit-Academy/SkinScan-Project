@@ -5,13 +5,13 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bangkit.skinscan.data.Disease
-import com.bangkit.skinscan.databinding.ActivityDetailHomeBinding
+import com.bangkit.skinscan.databinding.DiseaseItemHomeBinding
 
 class DiseaseHomeAdapter(private val listDisease : ArrayList<Disease>): RecyclerView.Adapter<DiseaseHomeAdapter.ViewHolder>() {
-    class ViewHolder(var binding: ActivityDetailHomeBinding): RecyclerView.ViewHolder(binding.root)
+    class ViewHolder(var binding: DiseaseItemHomeBinding): RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = ActivityDetailHomeBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = DiseaseItemHomeBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
