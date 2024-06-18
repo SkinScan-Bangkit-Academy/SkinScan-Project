@@ -26,6 +26,10 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        setView()
+    }
+
+    private fun setView(){
         list.addAll(Labels.listData)
         binding.rvHome.layoutManager = GridLayoutManager(requireContext(), 3)
         val adapter = DiseaseHomeAdapter(list)

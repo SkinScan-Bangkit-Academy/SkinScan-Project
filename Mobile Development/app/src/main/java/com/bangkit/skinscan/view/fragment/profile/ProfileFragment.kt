@@ -62,6 +62,11 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        setView()
+    }
+
+    private fun setView(){
         binding.logoutBtn.setOnClickListener { logoutBtn() }
         binding.Languange.setOnClickListener {
             startActivity(Intent(Settings.ACTION_LOCALE_SETTINGS))

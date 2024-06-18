@@ -22,9 +22,11 @@ class DetailItemHomeActivity : AppCompatActivity() {
     }
 
     private fun setDetail(details: Disease){
-        binding.imgView.setImageResource(details.img)
-        binding.diagnosingTitle.text = details.name
-        binding.drugRecTv.text = details.about
+        with(binding){
+            imgView.setImageResource(details.img)
+            diagnosingTitle.text = getString(details.name)
+            drugRecTv.text = getString(details.about)
+        }
     }
 
     companion object {

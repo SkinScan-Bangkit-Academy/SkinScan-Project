@@ -34,7 +34,7 @@ class DetailScanActivity : AppCompatActivity() {
 
         if (imageUri != null) {
             Glide.with(this).load(imageUri).into(binding.imgView)
-            try {
+
                 val bitmap = MediaStore.Images.Media.getBitmap(this.contentResolver, imageUri)
                 val resizedBitmap = Bitmap.createScaledBitmap(bitmap, 150, 150, true)
                 val label = classifyImage(resizedBitmap)
@@ -52,10 +52,6 @@ class DetailScanActivity : AppCompatActivity() {
                     binding.drugRecTv.text = getString(R.string.drug_recommend_unavailable)
                     binding.diseasePrevTv.text = getString(R.string.preventive_unavailable)
                 }
-
-            } catch (e: IOException) {
-                e.printStackTrace()
-            }
         }
     }
 
@@ -103,7 +99,7 @@ class DetailScanActivity : AppCompatActivity() {
     private fun getLabelFromOutput(output: TensorBuffer): String {
         val outputArray = output.floatArray
         val maxIndex = outputArray.indices.maxByOrNull { outputArray[it] } ?: -1
-        return  if (maxIndex != -1) Labels.diseaseLabels[maxIndex] else "Unknown"
+        return  if (maxIndex != -1) Labels.labels[maxIndex] else "Unknown"
     }
 
     companion object {

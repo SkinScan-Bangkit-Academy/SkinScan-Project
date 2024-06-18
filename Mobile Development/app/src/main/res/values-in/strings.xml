@@ -172,7 +172,25 @@
     <string name="desc_law">Ketentuan ini akan diatur dan diinterpretasikan sesuai dengan hukum Indonesia, tanpa memperhatikan ketentuan hukumnya.</string>
     <string name="contact_us">Hubungi Kami</string>
     <string name="desc_contact">Jika Anda memiliki pertanyaan tentang Ketentuan ini, silakan hubungi kami di Skinscan@gmail.com atau 082376253192.</string>
-
+    <string name="atopic_dermatitis">Dermatitis Atopik</string>
+    <string name="eczema">Eksim</string>
+    <string name="fungal_infections">Infeksi Jamur</string>
+    <string name="viral_infections">Infeksi Virus</string>
+    <string name="basal_cell_carcinoma">Karsinoma Sel Basal</string>
+    <string name="warts">Kutil</string>
+    <string name="psoriasis">Psoriasis</string>
+    <string name="moles">Tahi Lalat</string>
+    <string name="benign_tumors">Tumor Jinak</string>
+    <string name="dermatitis_about">Dermatitis atopic adalah kondisi kronis yang menyebabkan kulit menjadi merah, gatal, dan meradang. Biasanya dimulai pada masa kanak-kanak dan bisa berlanjut hingga dewasa.\nDermatitis atopic pertama kali diidentifikasi sebagai kondisi medis pada awal abad ke-20. Peneliti telah menemukan hubungan antara dermatitis atopic dengan asma dan hay fever, yang dikenal sebagai "atopic march".</string>
+    <string name="eksim_about">Eksim adalah istilah umum untuk berbagai kondisi kulit yang menyebabkan peradangan, kemerahan, dan gatal. Eksim paling sering digunakan untuk menggambarkan dermatitis atopic.\nEksim telah dikenal sejak zaman kuno, dengan referensi yang ditemukan dalam teks-teks medis Yunani dan Romawi. Perawatan modern untuk eksim dimulai berkembang pesat pada abad ke-20 dengan penemuan kortikosteroid topikal.</string>
+    <string name="infeksi_jamur_about">Infeksi jamur pada kulit disebabkan oleh berbagai jenis jamur dan dapat mempengaruhi kulit, rambut, dan kuku. Contoh umum termasuk kurap dan athlete\'s foot.\nInfeksi jamur telah dikenal sejak zaman kuno, dengan bukti arkeologis menunjukkan pengobatan jamur kulit di Mesir Kuno. Ilmu pengetahuan modern tentang infeksi jamur berkembang pesat pada abad ke-19 dengan penemuan mikroskop dan identifikasi organisme jamur.</string>
+    <string name="infeksi_virus_about">Infeksi virus kulit dapat disebabkan oleh berbagai virus, termasuk herpes simplex virus (HSV), human papillomavirus (HPV), dan poxvirus. Gejalanya bervariasi tergantung pada virus yang menginfeksi.\nPenelitian tentang infeksi virus kulit berkembang pada abad ke-20 dengan perkembangan virologi sebagai disiplin ilmiah. Vaksin dan antiviral mulai dikembangkan untuk mengatasi berbagai infeksi virus kulit.</string>
+    <string name="karsinoma_sel_basal_about">Karsinoma sel basal adalah jenis kanker kulit yang paling umum, biasanya muncul sebagai benjolan kecil dan mengkilap pada kulit yang sering terpapar sinar matahari.\nKarsinoma sel basal pertama kali dijelaskan secara medis pada abad ke-19. Peningkatan pemahaman tentang kaitan antara paparan sinar UV dan kanker kulit mendorong perkembangan strategi pencegahan dan pengobatan.</string>
+    <string name="kutil_about"> Kutil adalah pertumbuhan kulit yang disebabkan oleh infeksi human papillomavirus (HPV). Mereka bisa muncul di berbagai bagian tubuh.\nKutil telah dikenal sejak zaman kuno, dengan pengobatan tradisional ditemukan di berbagai budaya. Penelitian modern tentang HPV dan pengembangan vaksin HPV terjadi pada akhir abad ke-20.</string>
+    <string name="melanoma_about">Melanoma adalah jenis kanker kulit yang berkembang dari melanosit, sel-sel yang menghasilkan pigmen kulit. Melanoma adalah bentuk kanker kulit yang paling serius.\nMelanoma pertama kali dikenali sebagai entitas medis pada abad ke-19. Penelitian modern telah mengarah pada pemahaman yang lebih baik tentang genetika dan faktor risiko melanoma, serta pengembangan imunoterapi.</string>
+    <string name="psoriasis_about">Psoriasis adalah kondisi kulit kronis yang menyebabkan sel-sel kulit berkembang biak dengan cepat, menghasilkan bercak tebal, merah, dan bersisik.\nPsoriasis telah dikenal sejak zaman kuno, tetapi baru pada abad ke-19 kondisinya mulai dipahami secara lebih mendalam. Terapi modern termasuk penggunaan obat-obatan biologis yang menargetkan sistem kekebalan tubuh.</string>
+    <string name="tahi_lalat_about">Tahi lalat adalah pertumbuhan kulit yang biasanya berwarna coklat atau hitam, terdiri dari kelompok melanosit. Kebanyakan tahi lalat tidak berbahaya, tetapi beberapa dapat berkembang menjadi melanoma.\nTahi lalat telah dikenal dan diamati sepanjang sejarah manusia. Penelitian modern menekankan pentingnya pemantauan tahi lalat untuk mendeteksi tanda-tanda awal melanoma.</string>
+    <string name="tumor_jinak_about"> Tumor jinak adalah pertumbuhan non-kanker yang bisa terjadi di kulit. Mereka tidak menyebar ke bagian tubuh lain dan biasanya tidak berbahaya.\nStudi tentang tumor jinak telah ada sejak abad ke-19, dengan peningkatan pemahaman tentang perbedaan antara tumor jinak dan ganas yang membantu dalam diagnosis dan perawatan.</string>
 
 
 </resources>

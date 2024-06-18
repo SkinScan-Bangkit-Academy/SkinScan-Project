@@ -21,12 +21,14 @@ class DiseaseHomeAdapter(private val listDisease : ArrayList<Disease>): Recycler
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val disease = listDisease[position]
-        holder.binding.imageView.setImageResource(disease.img)
-        holder.binding.textViewUsername.text = disease.name
-        holder.binding.root.setOnClickListener {
-            val intent = Intent(holder.binding.root.context, DetailItemHomeActivity::class.java)
-            intent.putExtra(DetailItemHomeActivity.EXTRA_USER, disease)
-            holder.binding.root.context.startActivity(intent)
+        with(holder.binding){
+           imageView.setImageResource(disease.img)
+            textViewUsername.text = root.context.getString(disease.name)
+            root.setOnClickListener {
+                val intent = Intent(root.context, DetailItemHomeActivity::class.java)
+                intent.putExtra(DetailItemHomeActivity.EXTRA_USER, disease)
+                root.context.startActivity(intent)
+            }
         }
     }
 }
