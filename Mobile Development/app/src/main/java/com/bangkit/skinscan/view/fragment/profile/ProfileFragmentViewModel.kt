@@ -1,4 +1,4 @@
-package com.bangkit.skinscan.fragment.profile
+package com.bangkit.skinscan.view.fragment.profile
 
 import androidx.lifecycle.ViewModel
 import com.bangkit.skinscan.data.repository.Repository

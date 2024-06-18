@@ -4,10 +4,10 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.bangkit.skinscan.R
-import com.bangkit.skinscan.fragment.ArticleFragment
-import com.bangkit.skinscan.fragment.CameraFragment
-import com.bangkit.skinscan.fragment.home.HomeFragment
-import com.bangkit.skinscan.fragment.profile.ProfileFragment
+import com.bangkit.skinscan.view.fragment.ArticleFragment
+import com.bangkit.skinscan.view.fragment.CameraFragment
+import com.bangkit.skinscan.view.fragment.home.HomeFragment
+import com.bangkit.skinscan.view.fragment.profile.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {

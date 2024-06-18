@@ -1,4 +1,4 @@
-package com.bangkit.skinscan.fragment.profile
+package com.bangkit.skinscan.view.fragment.profile
 
 import android.content.Intent
 import android.os.Bundle
@@ -13,7 +13,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.bangkit.skinscan.R
 import com.bangkit.skinscan.databinding.FragmentProfileBinding
-import com.bangkit.skinscan.fragment.profile.resetpass.ResetPassActivity
+import com.bangkit.skinscan.view.fragment.profile.resetpass.ResetPassActivity
 import com.bangkit.skinscan.view.ViewModelFactory
 import com.bangkit.skinscan.view.login.LoginActivity
 import com.bangkit.skinscan.view.main.MainActivity

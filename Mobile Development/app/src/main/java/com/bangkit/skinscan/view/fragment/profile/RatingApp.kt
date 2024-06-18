@@ -1,4 +1,4 @@
-package com.bangkit.skinscan.fragment.profile
+package com.bangkit.skinscan.view.fragment.profile
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

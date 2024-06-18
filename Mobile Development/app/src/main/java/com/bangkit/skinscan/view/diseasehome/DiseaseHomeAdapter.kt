@@ -1,4 +1,4 @@
-package com.bangkit.skinscan.fragment.home
+package com.bangkit.skinscan.view.diseasehome
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bangkit.skinscan.data.Disease
 import com.bangkit.skinscan.databinding.ActivityDetailHomeBinding
-import com.bangkit.skinscan.view.main.diseasehome.DetailItemHomeActivity
 
 class DiseaseHomeAdapter(private val listDisease : ArrayList<Disease>): RecyclerView.Adapter<DiseaseHomeAdapter.ViewHolder>() {
     class ViewHolder(var binding: ActivityDetailHomeBinding): RecyclerView.ViewHolder(binding.root)

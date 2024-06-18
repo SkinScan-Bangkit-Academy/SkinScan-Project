@@ -1,4 +1,4 @@
-package com.bangkit.skinscan.view.main.diseasehome
+package com.bangkit.skinscan.view.diseasehome
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -24,6 +24,7 @@ class DetailItemHomeActivity : AppCompatActivity() {
     private fun setDetail(details: Disease){
         binding.imgView.setImageResource(details.img)
         binding.diagnosingTitle.text = details.name
+        binding.drugRecTv.text = details.about
     }
 
     companion object {

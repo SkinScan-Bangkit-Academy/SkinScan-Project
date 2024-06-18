@@ -1,4 +1,4 @@
-package com.bangkit.skinscan.fragment.profile.resetpass
+package com.bangkit.skinscan.view.fragment.profile.resetpass
 
 import android.content.Intent
 import android.os.Bundle

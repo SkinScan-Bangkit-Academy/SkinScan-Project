@@ -1,4 +1,4 @@
-package com.bangkit.skinscan.fragment.profile.resetpass
+package com.bangkit.skinscan.view.fragment.profile.resetpass
 
 import android.util.Log
 import androidx.lifecycle.LiveData

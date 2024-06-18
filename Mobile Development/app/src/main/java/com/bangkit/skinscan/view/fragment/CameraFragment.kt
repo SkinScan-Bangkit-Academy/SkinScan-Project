@@ -1,4 +1,4 @@
-package com.bangkit.skinscan.fragment
+package com.bangkit.skinscan.view.fragment
 
 import android.Manifest
 import android.content.Intent
