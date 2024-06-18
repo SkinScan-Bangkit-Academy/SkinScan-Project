@@ -75,6 +75,7 @@ class ProfileFragment : Fragment() {
             val intent = Intent(requireContext(), ResetPassActivity::class.java)
             startActivity(intent)
         }
+        observeUserSession()
     }
 
     private fun logoutBtn(){
@@ -84,6 +85,11 @@ class ProfileFragment : Fragment() {
                 flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
             }
             startActivity(intent)
+        }
+    }
+    private fun observeUserSession(){
+        profileFragmentViewModel.userSession.observe(viewLifecycleOwner){ user ->
+            binding.gmail.text = user.email
         }
     }
 }
