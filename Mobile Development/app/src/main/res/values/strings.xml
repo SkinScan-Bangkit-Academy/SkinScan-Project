@@ -5,7 +5,7 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="search_text">Looking for medicine?</string>
-    <string name="hi">Hi, %s</string>
+    <string name="hi">Hi, %s!</string>
     <string name="desc_name">Lets Solve Your Problem Desease !</string>
     <string name="title_type">General Of Type Skin Desease</string>
     <string name="home">Home</string>
@@ -191,4 +191,5 @@
     <string name="psoriasis_about">Psoriasis is a chronic skin condition that causes skin cells to multiply rapidly, resulting in thick, red, and scaly patches.\nPsoriasis has been known since ancient times, but it was not until the 19th century that the condition began to be understood more deeply. Modern therapies include the use of biologic drugs that target the immune system.</string>
     <string name="tahi_lalat_about">Moles are skin growths that are usually brown or black and consist of clusters of melanocytes. Most moles are harmless, but some can develop into melanoma.\nMoles have been known and observed throughout human history. Modern research emphasizes the importance of monitoring moles for early signs of melanoma.</string>
     <string name="tumor_jinak_about">Benign tumors are non-cancerous growths that can occur on the skin. They do not spread to other parts of the body and are usually not harmful.\nThe study of benign tumors has existed since the 19th century, with an improved understanding of the differences between benign and malignant tumors aiding in diagnosis and treatment.</string>
+    <string name="retry">retry</string>
 </resources>

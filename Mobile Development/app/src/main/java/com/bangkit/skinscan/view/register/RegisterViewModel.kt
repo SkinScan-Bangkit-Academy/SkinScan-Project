@@ -16,11 +16,11 @@ class RegisterViewModel(private var repository: Repository): ViewModel() {
 
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> = _isLoading
-    fun register(email: String, pass: String) {
+    fun register(name: String, email: String, pass: String) {
         _isLoading.value = true
         viewModelScope.launch {
             try {
-                val request = RegisterRequest(email, pass)
+                val request = RegisterRequest(name, email, pass)
                 val response = repository.register(request)
                 _registerResult.value = response
             } catch (e: Exception) {

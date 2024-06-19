@@ -1,11 +1,19 @@
 package com.bangkit.skinscan.data.repository
 
+
+import androidx.lifecycle.LiveData
+import androidx.paging.Pager
+import androidx.paging.PagingConfig
+import androidx.paging.PagingData
+import androidx.paging.liveData
+import com.bangkit.skinscan.data.source.ArticlePagingSource
 import com.bangkit.skinscan.data.preference.UserModel
 import com.bangkit.skinscan.data.preference.UserPreference
 import com.bangkit.skinscan.data.remote.ApiService
 import com.bangkit.skinscan.data.remote.request.ResetPassRequest
 import com.bangkit.skinscan.data.remote.request.LoginRequest
 import com.bangkit.skinscan.data.remote.request.RegisterRequest
+import com.bangkit.skinscan.data.remote.response.Article
 import com.bangkit.skinscan.data.remote.response.LoginResponse
 import com.bangkit.skinscan.data.remote.response.RegisterResponse
 import kotlinx.coroutines.flow.Flow
@@ -39,16 +47,16 @@ class Repository private constructor(
         return apiService.resetPass(request)
     }
 
-//    fun getArticle(): LiveData<PagingData<ListStoryItem>> {
-//        return Pager(
-//            config = PagingConfig(
-//                pageSize = 5
-//            ),
-//            pagingSourceFactory = {
-//                StoryPagingSource(apiService)
-//            }
-//        ).liveData
-//    }
+    fun getArticle(): LiveData<PagingData<Article>> {
+       return Pager(
+           config = PagingConfig(
+               pageSize = 5
+           ),
+           pagingSourceFactory = {
+               ArticlePagingSource(apiService)
+           }
+       ).liveData
+    }
 
     companion object {
         @Volatile

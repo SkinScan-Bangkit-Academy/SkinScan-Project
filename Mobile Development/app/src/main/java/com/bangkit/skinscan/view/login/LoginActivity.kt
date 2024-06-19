@@ -74,6 +74,7 @@ class LoginActivity : AppCompatActivity() {
                         UserModel(
                             result.userCredential.tokenResponse.idToken,
                             result.userCredential.user.email,
+                            result.userCredential.tokenResponse.displayName,
                             true
                         )
                     )

@@ -67,7 +67,7 @@ class RegisterActivity : AppCompatActivity() {
             binding.etEmail.error = null
             binding.etPw.error = null
 
-            registerViewModel.register(email, password)
+            registerViewModel.register(name, email, password)
             registerViewModel.isLoading.observe(this){
                 showLoading(it)
             }

@@ -90,6 +90,7 @@ class ProfileFragment : Fragment() {
     private fun observeUserSession(){
         profileFragmentViewModel.userSession.observe(viewLifecycleOwner){ user ->
             binding.gmail.text = user.email
+            binding.displayName.text = user.name
         }
     }
 }

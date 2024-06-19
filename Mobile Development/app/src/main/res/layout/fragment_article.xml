@@ -40,11 +40,15 @@
            android:queryHint="Find your Lovely Article" />
 
        <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/rv_article"
            android:layout_width="match_parent"
            android:layout_height="match_parent"
-           android:layout_marginTop="20dp"
-           android:layout_margin="30dp"
-           android:layout_below="@id/find_article">
+           android:layout_below="@id/find_article"
+           android:layout_marginStart="30dp"
+           android:layout_marginTop="30dp"
+           android:layout_marginEnd="30dp"
+           tools:listitem="@layout/activity_detail_article"
+           android:layout_marginBottom="30dp">
 
        </androidx.recyclerview.widget.RecyclerView>
    </RelativeLayout>

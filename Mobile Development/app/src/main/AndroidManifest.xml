@@ -37,9 +37,6 @@
             android:exported="false"
             android:theme="@style/Theme.SkinScan" />
         <activity
-            android:name=".view.article.DetailArticleActivity"
-            android:exported="false" />
-        <activity
             android:name=".view.scan.DetailScanActivity"
             android:exported="false" />
         <activity
