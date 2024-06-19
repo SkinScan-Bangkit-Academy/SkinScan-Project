@@ -10,53 +10,32 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="130dp"
             android:src="@drawable/skinscan"
             android:contentDescription="@string/Home_logo" />
-        <Button
-            android:id="@+id/setting"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:background="@drawable/setting"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="10dp"
-            android:contentDescription="@string/desc_setting" />
 
         <TextView
             android:id="@+id/nameapp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
+            android:layout_marginStart="180dp"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/roboto_medium"
             android:text="@string/app_name"
             android:textSize="20sp"
             android:textColor="@color/primaryColor" />
 
-
-        <SearchView
-            android:id="@+id/sv_main"
-            android:background="@drawable/edittext_shape"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_below="@id/nameapp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="20dp"
-            android:queryHint="@string/search_text"
-            android:iconifiedByDefault="false"/>
-
-
-
         <LinearLayout
             android:id="@+id/opening"
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:layout_below="@id/sv_main"
+            android:layout_below="@id/nameapp"
+            android:layout_marginTop="30dp"
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:orientation="horizontal">
                 <TextView
@@ -110,7 +89,7 @@
             <ImageView
                 android:id="@+id/bg_rv"
                 android:layout_width="370dp"
-                android:layout_height="250dp"
+                android:layout_height="290dp"
                 android:layout_below="@id/title"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
@@ -120,7 +99,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_home"
                 android:layout_width="350dp"
-                android:layout_height="230dp"
+                android:layout_height="270dp"
                 android:layout_margin="20dp"
                 android:layout_below="@id/title"
                 android:layout_centerHorizontal="true"
