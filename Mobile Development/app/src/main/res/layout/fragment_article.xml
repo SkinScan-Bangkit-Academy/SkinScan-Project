@@ -19,11 +19,11 @@
            android:layout_width="200dp"
            android:layout_height="wrap_content"
            android:layout_marginStart="70dp"
-           android:layout_marginTop="20dp"
+           android:layout_marginTop="24dp"
            android:text="@string/title_article"
            android:textColor="@color/thirdColor"
            android:fontFamily="@font/roboto_regular"
-           android:textSize="32sp"/>
+           android:textSize="26sp"/>
 
        <ImageView
            android:layout_width="200dp"

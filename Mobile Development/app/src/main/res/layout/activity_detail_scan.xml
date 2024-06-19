@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:text="@string/result_of_scan"
         android:textSize="24sp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/roboto_bold"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="16dp"/>

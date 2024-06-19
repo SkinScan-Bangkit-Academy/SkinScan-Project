@@ -23,7 +23,7 @@
             android:textSize="25sp"/>
     </RelativeLayout>
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/bg_profile"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -31,8 +31,6 @@
         android:layout_gravity="center_horizontal"
         android:src="@drawable/sample_bg"
         android:scaleType="centerCrop"
-        android:background="@drawable/oval"
-        android:clipToOutline="true"
         android:contentDescription="@string/photoprofile" />
 
     <TextView
