@@ -130,7 +130,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="275dp"
+        android:layout_marginTop="285dp"
         android:layout_marginStart="30dp"
         android:orientation="vertical">
 
@@ -172,7 +172,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="275dp"
+        android:layout_marginTop="285dp"
         android:layout_marginStart="350dp"
         android:orientation="vertical">
 
