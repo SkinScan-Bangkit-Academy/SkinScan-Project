@@ -10,7 +10,7 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="20dp"
             android:layout_marginStart="130dp"
             android:src="@drawable/skinscan"
             android:contentDescription="@string/Home_logo" />
@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="180dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="35dp"
             android:fontFamily="@font/roboto_medium"
             android:text="@string/app_name"
             android:textSize="20sp"
@@ -31,12 +31,12 @@
             android:layout_width="match_parent"
             android:layout_height="350dp"
             android:layout_below="@id/nameapp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
                 <TextView
                     android:id="@+id/displayName"
