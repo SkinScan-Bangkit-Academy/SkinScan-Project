@@ -7,7 +7,7 @@
     <string name="search_text">Looking for medicine?</string>
     <string name="hi">Hi, %s!</string>
     <string name="desc_name">Lets Solve Your Problem Desease !</string>
-    <string name="title_type">General Of Type Skin Desease</string>
+    <string name="title_type">General of Type Skin Desease</string>
     <string name="home">Home</string>
     <string name="article">Article</string>
     <string name="history">History</string>
@@ -85,7 +85,7 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="label">%s</string>
-    <string name="title_article">Le\'ts Read The Article !</string>
+    <string name="title_article">Let\'s Read The Article !</string>
     <string name="img_article">img_article</string>
     <string name="invalid_email">Incorrect format</string>
     <string name="invalid_data">Please complete this field.</string>

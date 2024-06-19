@@ -144,8 +144,8 @@
     <string name="enter_your_password">Masukkan Kata Sandi Anda</string>
     <string name="about_desease">Tentang Penyakit</string>
     <string name="tv_reset_password">Atur Ulang Kata Sandi</string>
-    <string name="reset_btn">Selanjutnys</string>
-    <string name="title_dialog_reset_password">Atur Ulang Kata Sandi??</string>
+    <string name="reset_btn">Selanjutnya</string>
+    <string name="title_dialog_reset_password">Atur Ulang Kata Sandi?</string>
     <string name="message_dialog_reset">Silahkan periksa email Anda untuk mengatur ulang kata sandi Anda.</string>
     <string name="ok">OK</string>
     <string name="submit">Kirim</string>
