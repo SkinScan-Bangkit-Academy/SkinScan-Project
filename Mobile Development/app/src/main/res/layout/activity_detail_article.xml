@@ -21,7 +21,6 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/find_article"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:paddingEnd="13dp"
@@ -51,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="80dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="60dp"
             android:textSize="12sp"
             tools:text="@tools:sample/full_names"
             android:fontFamily="@font/roboto_regular" />

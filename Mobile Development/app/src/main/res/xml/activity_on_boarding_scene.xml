@@ -228,8 +228,8 @@
             motion:layout_editor_absoluteY="551dp"
             motion:layout_editor_absoluteX="70dp" />
         <Constraint
-            android:layout_width="292dp"
-            android:layout_height="83dp"
+            android:layout_width="334dp"
+            android:layout_height="105dp"
             motion:layout_constraintTop_toBottomOf="@+id/logoMenu2"
             android:layout_marginTop="8dp"
             android:id="@+id/descMenu2"
