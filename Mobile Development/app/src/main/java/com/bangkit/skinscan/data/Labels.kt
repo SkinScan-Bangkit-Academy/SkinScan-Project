@@ -16,6 +16,7 @@ object Labels {
         R.string.viral_infections,
         R.string.basal_cell_carcinoma,
         R.string.warts,
+        R.string.melanoma,
         R.string.psoriasis,
         R.string.moles,
         R.string.benign_tumors
