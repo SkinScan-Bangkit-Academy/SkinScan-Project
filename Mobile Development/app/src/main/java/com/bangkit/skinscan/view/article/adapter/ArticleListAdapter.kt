@@ -16,6 +16,7 @@ class ArticleListAdapter : PagingDataAdapter<Article, ArticleListAdapter.ViewHol
                 .load(data.image)
                 .into(binding.imgView)
             binding.title.text = data.title
+            binding.date.text = data.date
         }
 
     }

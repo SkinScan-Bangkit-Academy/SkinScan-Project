@@ -47,10 +47,12 @@
             android:fontFamily="@font/roboto_medium" />
 
         <TextView
+            android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="80dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="70dp"
+            android:textSize="12sp"
             tools:text="@tools:sample/full_names"
             android:fontFamily="@font/roboto_regular" />
 

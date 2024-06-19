@@ -23,5 +23,8 @@ data class Article(
 	val image: String,
 
 	@field:SerializedName("title")
-	val title: String
+	val title: String,
+
+	@field:SerializedName("date")
+	val date: String
 )
