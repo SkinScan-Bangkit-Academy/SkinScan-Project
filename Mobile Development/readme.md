@@ -13,7 +13,7 @@ This project features an Android application developed using both XML layout and
 SkinScan is an application for detecting skin diseases using the camera and gallery. The application also provides explanations of diseases, including drug recommendations and prevention methods, as well as articles on skin diseases.
 
 ## Download APK Link
-[Download APK](#https://drive.google.com/file/d/1aPZLfWH8BK0V97LeztbNjyOUXGYzmUqs/view?usp=drive_link)
+(#https://drive.google.com/file/d/1aPZLfWH8BK0V97LeztbNjyOUXGYzmUqs/view?usp=drive_link)
 
 ## Tech Used
 Calorify Android app developed with:
