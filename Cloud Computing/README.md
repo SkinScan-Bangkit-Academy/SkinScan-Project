@@ -6,11 +6,11 @@ This repository contains the server-side code and database setup for the SkinSca
 - [Introduction](#introduction)
 - [Environment](#environment)
 - [Configuration](#configuration)
-- [API Documentation](api-documentation)
-- [API URL](api-url)
+- [API Documentation](documentation)
+- [API URL](url)
 
 ## Introduction
-SkinScan is an application for detecting skin diseases using the camera and gallery. The application also provides explanations of diseases, including drug recommendations and prevention methods, as well as articles on skin diseases.
+SkinScan is an application for detecting skin diseases using camera and gallery. The application also provides explanations of diseases, including drug recommendations and prevention methods, as well as articles on skin diseases.
 
 ## Environment
 SkinScan Backend runs with :
@@ -50,3 +50,6 @@ FIREBASE_APP_ID=
 
 ## API Documentation
 [API Documentation Link](https://documenter.getpostman.com/view/34778228/2sA3XLDPKz)
+
+## API URL
+https://skinscan-capstone.et.r.appspot.com/api
